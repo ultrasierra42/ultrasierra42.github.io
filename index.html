@@ -1,0 +1,1982 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>911爆料_视频社区品牌,发现真实影像的力量</title>
+<meta name="description" content="911爆料官方网站，深耕真实影像与线索内容的企业级视频社区，汇聚创作者、专题企划与深度观察，为关注真相的用户提供高品质内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101820'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='%23ff4d2e' stroke-width='4'/%3E%3Cpath d='M27 22 L45 32 L27 42 Z' fill='%23ff4d2e'/%3E%3C/svg%3E">
+<style>
+:root{
+  --b900-ink:#0f1419;
+  --b900-deep:#151c24;
+  --b900-panel:#1c2530;
+  --b900-line:rgba(255,255,255,.09);
+  --b900-txt:#e8edf2;
+  --b900-mut:#93a1b0;
+  --b900-acc:#ff4d2e;
+  --b900-acc2:#3ad6c4;
+  --b900-paper:#f5f1ea;
+  --b900-paper2:#ffffff;
+  --b900-paperink:#1b2028;
+  --b900-papermut:#5b6675;
+  --b900-radius:16px;
+  --b900-shadow:0 18px 44px rgba(9,14,20,.34);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:132px}
+body{
+  margin:0;padding:0;
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:var(--b900-paper);
+  color:var(--b900-paperink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:800;letter-spacing:.2px}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+.b900-shell{width:min(1200px,92vw);margin:0 auto}
+
+/* ============ 吸顶区：公告条 + 页头 ============ */
+.b900-sticky{position:sticky;top:0;z-index:90}
+.b900-announce{
+  background:linear-gradient(90deg,#12181f,#1d2733 55%,#12181f);
+  color:#dfe7ee;
+  font-size:13.5px;
+  border-bottom:1px solid var(--b900-line);
+}
+.b900-announce-inner{
+  display:flex;align-items:center;gap:12px;
+  width:min(1200px,92vw);margin:0 auto;
+  padding:8px 0;overflow:hidden;
+}
+.b900-announce-tag{
+  flex:none;font-size:11px;font-weight:800;letter-spacing:1px;
+  background:var(--b900-acc);color:#fff;border-radius:4px;padding:2px 8px;
+}
+.b900-announce-track{
+  display:flex;gap:34px;white-space:nowrap;
+  animation:b900marquee 34s linear infinite;
+}
+.b900-announce-track span{opacity:.92}
+.b900-announce-track b{color:var(--b900-acc2);font-weight:700}
+@keyframes b900marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.b900-header{
+  background:rgba(15,20,25,.96);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--b900-line);
+  color:var(--b900-txt);
+}
+.b900-header-inner{
+  display:flex;align-items:center;gap:26px;
+  width:min(1200px,92vw);margin:0 auto;padding:14px 0;
+}
+.b900-logo{display:flex;align-items:center;gap:10px;flex:none}
+.b900-logo-mark{
+  width:38px;height:38px;border-radius:11px;
+  background:linear-gradient(140deg,#ff4d2e,#c2260c);
+  display:grid;place-items:center;box-shadow:0 6px 16px rgba(255,77,46,.35);
+}
+.b900-logo-mark svg{width:18px;height:18px}
+.b900-logo-text{display:flex;flex-direction:column;line-height:1.2}
+.b900-logo-text strong{font-size:18px;letter-spacing:1px}
+.b900-logo-text em{font-size:10.5px;font-style:normal;color:var(--b900-mut);letter-spacing:2.4px}
+.b900-nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+.b900-nav a{
+  font-size:14px;padding:8px 12px;border-radius:8px;color:#c3cdd8;
+  transition:background .2s,color .2s;
+}
+.b900-nav a:hover,.b900-nav a.b900-nav-on{background:rgba(255,255,255,.08);color:#fff}
+.b900-header-tools{display:flex;align-items:center;gap:10px}
+.b900-search{
+  display:flex;align-items:center;gap:8px;
+  background:rgba(255,255,255,.07);border:1px solid var(--b900-line);
+  border-radius:10px;padding:6px 10px;
+}
+.b900-search input{
+  width:150px;border:0;outline:0;background:transparent;color:#fff;font-size:13.5px;
+}
+.b900-search input::placeholder{color:#7d8b99}
+.b900-search button{
+  border:0;background:var(--b900-acc);color:#fff;border-radius:7px;
+  padding:4px 10px;font-size:12.5px;font-weight:700;
+}
+.b900-btn-ghost{
+  border:1px solid rgba(255,255,255,.22);background:transparent;color:#e8edf2;
+  padding:8px 16px;border-radius:9px;font-size:13.5px;font-weight:600;
+  transition:background .2s,border-color .2s;
+}
+.b900-btn-ghost:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.4)}
+.b900-burger{
+  display:none;width:40px;height:40px;border-radius:9px;border:1px solid var(--b900-line);
+  background:rgba(255,255,255,.06);
+}
+.b900-burger span{display:block;width:18px;height:2px;background:#dfe7ee;margin:3px auto;border-radius:2px}
+.b900-search-feedback{
+  font-size:12.5px;color:var(--b900-acc2);
+  width:min(1200px,92vw);margin:0 auto;padding:0 0 8px;
+  min-height:0;transition:opacity .2s;opacity:0;
+}
+.b900-search-feedback.b900-show{opacity:1;min-height:22px}
+
+/* ============ 首屏 ============ */
+.b900-hero{
+  background:
+    radial-gradient(900px 420px at 82% 8%,rgba(255,77,46,.20),transparent 62%),
+    radial-gradient(700px 380px at 8% 92%,rgba(58,214,196,.16),transparent 60%),
+    linear-gradient(160deg,#101820 0%,#18222c 58%,#0d141a 100%);
+  color:var(--b900-txt);
+  padding:64px 0 72px;
+  position:relative;overflow:hidden;
+}
+.b900-hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+  background-size:64px 64px;
+  mask-image:radial-gradient(70% 70% at 50% 40%,#000,transparent 100%);
+}
+.b900-hero-grid{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center;
+  position:relative;z-index:2;
+}
+.b900-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12.5px;font-weight:700;letter-spacing:2px;
+  color:var(--b900-acc2);border:1px solid rgba(58,214,196,.36);
+  border-radius:99px;padding:5px 14px;margin-bottom:20px;
+}
+.b900-eyebrow i{width:6px;height:6px;border-radius:50%;background:var(--b900-acc2);display:inline-block}
+.b900-hero h1{
+  font-size:clamp(40px,6vw,66px);
+  letter-spacing:2px;
+  background:linear-gradient(100deg,#ffffff 20%,#ffb9a9 62%,#ff4d2e 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  margin-bottom:6px;
+}
+.b900-hero-sub{
+  font-size:15px;letter-spacing:3px;color:#9fb0c0;margin-bottom:22px;font-weight:600;
+}
+.b900-hero-lead{
+  font-size:15.5px;color:#c3cfda;max-width:560px;margin-bottom:26px;
+}
+.b900-hero-lead b{color:#fff}
+.b900-hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px}
+.b900-btn-primary{
+  display:inline-flex;align-items:center;gap:9px;
+  background:linear-gradient(120deg,#ff5a34,#d62d0d);color:#fff;
+  border:0;border-radius:11px;padding:13px 24px;font-size:14.5px;font-weight:800;
+  box-shadow:0 12px 28px rgba(255,77,46,.34);
+  transition:transform .2s,box-shadow .2s;
+}
+.b900-btn-primary:hover{transform:translateY(-2px);box-shadow:0 18px 34px rgba(255,77,46,.44)}
+.b900-btn-outline{
+  display:inline-flex;align-items:center;gap:9px;
+  background:rgba(255,255,255,.06);color:#e8edf2;border:1px solid rgba(255,255,255,.22);
+  border-radius:11px;padding:13px 24px;font-size:14.5px;font-weight:700;
+  transition:background .2s;
+}
+.b900-btn-outline:hover{background:rgba(255,255,255,.14)}
+.b900-kpis{display:flex;gap:34px;flex-wrap:wrap}
+.b900-kpi strong{display:block;font-size:26px;color:#fff;letter-spacing:.5px}
+.b900-kpi strong span{font-size:14px;color:var(--b900-acc2);margin-left:2px}
+.b900-kpi em{font-style:normal;font-size:12.5px;color:#8a99a9;letter-spacing:1px}
+.b900-hero-visual{position:relative}
+.b900-hero-frame{
+  border-radius:22px;overflow:hidden;border:1px solid rgba(255,255,255,.14);
+  box-shadow:var(--b900-shadow);background:#0a1016;position:relative;
+}
+.b900-hero-frame svg{width:100%;height:auto;display:block}
+.b900-play-badge{
+  position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;
+}
+.b900-play-badge i{
+  width:74px;height:74px;border-radius:50%;display:grid;place-items:center;
+  background:rgba(255,77,46,.92);box-shadow:0 0 0 12px rgba(255,77,46,.18);
+}
+.b900-play-badge i::after{
+  content:"";border-left:20px solid #fff;border-top:12px solid transparent;border-bottom:12px solid transparent;margin-left:6px;
+}
+.b900-hero-float{
+  position:absolute;right:-10px;bottom:-18px;
+  background:#151d26;border:1px solid var(--b900-line);border-radius:14px;
+  padding:12px 16px;font-size:12.5px;color:#c3cdd8;box-shadow:var(--b900-shadow);
+  display:flex;align-items:center;gap:10px;
+}
+.b900-hero-float b{color:var(--b900-acc2);font-size:16px}
+.b900-hero-tagrow{display:flex;gap:9px;flex-wrap:wrap;margin-top:26px}
+.b900-hero-tagrow a{
+  font-size:12.5px;padding:6px 13px;border-radius:99px;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);color:#b9c6d3;
+  transition:.2s;
+}
+.b900-hero-tagrow a:hover{background:rgba(255,77,46,.2);border-color:rgba(255,77,46,.5);color:#fff}
+
+/* ============ 通用 section ============ */
+.b900-sec{padding:76px 0}
+.b900-sec-alt{background:var(--b900-paper2)}
+.b900-sec-dark{background:linear-gradient(170deg,#101820,#182430 70%,#0e151c);color:var(--b900-txt)}
+.b900-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:38px;flex-wrap:wrap}
+.b900-sec-head h2{font-size:clamp(25px,3.2vw,34px);letter-spacing:1px}
+.b900-sec-head h2 small{
+  display:block;font-size:12px;letter-spacing:4px;color:var(--b900-acc);
+  font-weight:700;margin-bottom:9px;
+}
+.b900-sec-dark .b900-sec-head h2 small{color:var(--b900-acc2)}
+.b900-sec-head p{font-size:14px;color:var(--b900-papermut);max-width:520px}
+.b900-sec-dark .b900-sec-head p{color:#93a1b0}
+.b900-more{
+  font-size:13.5px;font-weight:700;color:var(--b900-acc);
+  border-bottom:2px solid rgba(255,77,46,.35);padding-bottom:2px;flex:none;
+}
+
+/* ============ 深度解析区块（关键词介绍） ============ */
+.b900-about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:start}
+.b900-about-card{
+  background:linear-gradient(150deg,#1b2530,#121a22);
+  border:1px solid var(--b900-line);border-radius:20px;padding:30px;
+  color:var(--b900-txt);position:sticky;top:150px;
+}
+.b900-about-card h3{font-size:19px;margin-bottom:14px;letter-spacing:.6px}
+.b900-about-card h3 em{font-style:normal;color:var(--b900-acc2)}
+.b900-about-list li{
+  display:flex;gap:12px;padding:12px 0;border-bottom:1px dashed rgba(255,255,255,.1);font-size:13.5px;color:#b3c0cd;
+}
+.b900-about-list li:last-child{border-bottom:0}
+.b900-about-list li b{color:#fff;flex:none;font-size:12px;width:52px;color:var(--b900-acc)}
+.b900-prose p{font-size:14.6px;color:#3c4655;margin-bottom:16px;text-indent:2em}
+.b900-prose p b{color:var(--b900-paperink);background:linear-gradient(transparent 62%,rgba(255,77,46,.28) 62%);padding:0 1px}
+.b900-prose h3{font-size:17px;margin:26px 0 12px;color:var(--b900-paperink);padding-left:12px;border-left:4px solid var(--b900-acc)}
+
+/* ============ 焦点视频 ============ */
+.b900-focus-grid{
+  display:grid;grid-template-columns:1.35fr 1fr;grid-template-rows:auto auto;gap:22px;
+}
+.b900-vcard{
+  background:#fff;border:1px solid #e6e1d8;border-radius:18px;overflow:hidden;
+  transition:transform .25s,box-shadow .25s,border-color .25s;position:relative;
+  display:flex;flex-direction:column;
+}
+.b900-vcard:hover{transform:translateY(-5px);box-shadow:0 22px 40px rgba(20,26,34,.13);border-color:#f0c4b7}
+.b900-vcard-media{position:relative;overflow:hidden;background:#d9d3c8;aspect-ratio:16/9}
+.b900-vcard-media svg{width:100%;height:100%;display:block;transition:transform .5s}
+.b900-vcard:hover .b900-vcard-media svg{transform:scale(1.05)}
+.b900-vcard-badge{
+  position:absolute;left:12px;top:12px;z-index:3;
+  background:rgba(16,20,25,.78);color:#fff;font-size:11.5px;font-weight:700;
+  border-radius:6px;padding:3px 9px;letter-spacing:.5px;backdrop-filter:blur(4px);
+}
+.b900-vcard-play{
+  position:absolute;right:12px;bottom:12px;z-index:3;width:38px;height:38px;border-radius:50%;
+  background:rgba(255,77,46,.9);display:grid;place-items:center;opacity:0;transform:scale(.8);
+  transition:.25s;
+}
+.b900-vcard-play::after{
+  content:"";border-left:11px solid #fff;border-top:7px solid transparent;border-bottom:7px solid transparent;margin-left:3px;
+}
+.b900-vcard:hover .b900-vcard-play{opacity:1;transform:scale(1)}
+.b900-vcard-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:9px;flex:1}
+.b900-vcard-body h3{font-size:16px;line-height:1.45}
+.b900-vcard-body p{font-size:13px;color:var(--b900-papermut);line-height:1.65}
+.b900-vcard-meta{display:flex;align-items:center;gap:9px;font-size:12px;color:#7a8595;flex-wrap:wrap}
+.b900-avatar{
+  width:24px;height:24px;border-radius:50%;flex:none;display:grid;place-items:center;
+  color:#fff;font-size:11px;font-weight:800;
+}
+.b900-vcard-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
+.b900-chip{
+  font-size:11px;padding:2px 9px;border-radius:99px;background:#f6efe4;
+  color:#a2622f;border:1px solid #eaddc7;font-weight:600;
+}
+.b900-vcard-actions{display:flex;gap:14px;margin-top:10px;border-top:1px dashed #ece5d9;padding-top:10px}
+.b900-icobtn{
+  border:0;background:transparent;display:inline-flex;align-items:center;gap:5px;
+  font-size:12.5px;color:#7a8595;padding:3px 0;transition:color .2s;
+}
+.b900-icobtn:hover{color:var(--b900-acc)}
+.b900-icobtn svg{width:15px;height:15px}
+.b900-icobtn.b900-liked{color:var(--b900-acc);font-weight:700}
+.b900-icobtn.b900-saved{color:#c2260c}
+.b900-focus-main .b900-vcard-body h3{font-size:20px}
+.b900-focus-main .b900-vcard-body p{font-size:13.6px}
+
+/* ============ 热门视频流 ============ */
+.b900-vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.b900-sec-dark .b900-vcard{
+  background:#18212b;border-color:rgba(255,255,255,.09);color:var(--b900-txt);
+}
+.b900-sec-dark .b900-vcard:hover{border-color:rgba(58,214,196,.4);box-shadow:0 22px 42px rgba(0,0,0,.42)}
+.b900-sec-dark .b900-vcard-body p{color:#93a1b0}
+.b900-sec-dark .b900-vcard-meta{color:#8694a2}
+.b900-sec-dark .b900-chip{background:rgba(58,214,196,.12);border-color:rgba(58,214,196,.28);color:#7ee8da}
+.b900-sec-dark .b900-vcard-actions{border-top-color:rgba(255,255,255,.1)}
+.b900-sec-dark .b900-icobtn{color:#8694a2}
+.b900-sec-dark .b900-icobtn:hover{color:var(--b900-acc2)}
+
+/* ============ 专题 ============ */
+.b900-topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.b900-topic{
+  border-radius:18px;overflow:hidden;position:relative;min-height:230px;
+  display:flex;flex-direction:column;justify-content:flex-end;padding:22px;color:#fff;
+  background:#1b2530;border:1px solid #e6e1d8;
+}
+.b900-topic svg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.b900-topic::after{
+  content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,rgba(10,15,20,.05) 10%,rgba(10,15,20,.86) 92%);
+}
+.b900-topic-in{position:relative;z-index:2}
+.b900-topic-state{
+  display:inline-block;font-size:11px;font-weight:800;letter-spacing:1px;
+  background:rgba(58,214,196,.92);color:#0c1519;border-radius:5px;padding:2px 9px;margin-bottom:9px;
+}
+.b900-topic-state.b900-state-hot{background:var(--b900-acc);color:#fff}
+.b900-topic-in h3{font-size:17px;margin-bottom:6px}
+.b900-topic-in p{font-size:12.6px;color:#c6d0da;line-height:1.6}
+.b900-topic-in span{display:block;margin-top:10px;font-size:11.5px;color:#8fa0b0}
+
+/* ============ 创作者 ============ */
+.b900-creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.b900-creator{
+  background:#fff;border:1px solid #e6e1d8;border-radius:18px;padding:24px 20px;
+  text-align:center;transition:transform .25s,box-shadow .25s;
+}
+.b900-creator:hover{transform:translateY(-5px);box-shadow:0 20px 36px rgba(20,26,34,.12)}
+.b900-creator-av{
+  width:66px;height:66px;border-radius:22px;margin:0 auto 14px;
+  display:grid;place-items:center;color:#fff;font-size:23px;font-weight:800;
+  box-shadow:0 10px 20px rgba(20,26,34,.16);
+}
+.b900-creator h3{font-size:16px;margin-bottom:4px}
+.b900-creator em{font-style:normal;font-size:12px;color:var(--b900-acc);font-weight:700;letter-spacing:.4px}
+.b900-creator p{font-size:12.6px;color:var(--b900-papermut);margin:10px 0 14px;line-height:1.65;min-height:60px}
+.b900-creator-nums{display:flex;justify-content:center;gap:18px;font-size:12px;color:#7a8595;border-top:1px dashed #ece5d9;padding-top:12px}
+.b900-creator-nums b{display:block;color:var(--b900-paperink);font-size:14.5px}
+.b900-creator-more{
+  margin-top:14px;width:100%;border:1px solid #e6e1d8;background:#faf7f1;border-radius:9px;
+  padding:7px;font-size:12.5px;font-weight:700;color:#4b5563;transition:.2s;
+}
+.b900-creator-more:hover{background:var(--b900-acc);color:#fff;border-color:var(--b900-acc)}
+
+/* ============ 影像墙 ============ */
+.b900-wall{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.b900-wall-item{
+  position:relative;border-radius:14px;overflow:hidden;background:#d8d2c6;
+  border:1px solid #e6e1d8;
+}
+.b900-wall-item svg{width:100%;height:100%;display:block;object-fit:cover}
+.b900-wall-item figcaption{
+  position:absolute;left:0;right:0;bottom:0;padding:22px 13px 10px;
+  background:linear-gradient(to top,rgba(10,15,20,.86),transparent);
+  color:#fff;font-size:12.5px;font-weight:600;
+}
+.b900-w1{grid-column:span 5;grid-row:span 2;aspect-ratio:4/3}
+.b900-w2{grid-column:span 4;aspect-ratio:16/10}
+.b900-w3{grid-column:span 3;aspect-ratio:1/1}
+.b900-w4{grid-column:span 4;aspect-ratio:16/10}
+.b900-w5{grid-column:span 3;aspect-ratio:1/1}
+.b900-w6{grid-column:span 6;aspect-ratio:16/7}
+
+/* ============ 评价 ============ */
+.b900-review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.b900-review{
+  background:#fff;border:1px solid #e6e1d8;border-radius:16px;padding:22px;
+  position:relative;transition:transform .25s,box-shadow .25s;
+}
+.b900-review:hover{transform:translateY(-4px);box-shadow:0 18px 32px rgba(20,26,34,.1)}
+.b900-review::before{
+  content:"“";position:absolute;right:18px;top:6px;font-size:52px;color:#f1e3d5;font-weight:800;line-height:1;
+}
+.b900-review-top{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.b900-review-top h3{font-size:14px;margin-bottom:2px}
+.b900-review-top em{font-style:normal;font-size:11.5px;color:#9aa4b1}
+.b900-review p{font-size:13.2px;color:#4a5563;line-height:1.72;position:relative;z-index:2}
+.b900-review-stars{margin-top:12px;font-size:12.5px;color:#f0a02e;letter-spacing:2px}
+
+/* ============ 榜单 ============ */
+.b900-rank{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.b900-rank-card{
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.11);
+  border-radius:16px;padding:22px;
+}
+.b900-rank-card h3{font-size:15.5px;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.b900-rank-card h3 i{width:8px;height:8px;border-radius:2px;background:var(--b900-acc);display:inline-block}
+.b900-rank-card li{
+  display:flex;align-items:center;gap:11px;padding:9px 0;font-size:13px;
+  border-bottom:1px dashed rgba(255,255,255,.09);color:#b8c4d0;
+}
+.b900-rank-card li:last-child{border-bottom:0}
+.b900-rank-no{
+  width:22px;height:22px;border-radius:6px;display:grid;place-items:center;
+  font-size:11.5px;font-weight:800;background:rgba(255,255,255,.09);color:#dfe7ee;flex:none;
+}
+.b900-rank-card li:nth-child(1) .b900-rank-no{background:var(--b900-acc);color:#fff}
+.b900-rank-card li:nth-child(2) .b900-rank-no{background:rgba(58,214,196,.85);color:#0d1519}
+.b900-rank-card li span{margin-left:auto;color:#7d8b99;font-size:12px}
+
+/* ============ 动态 ============ */
+.b900-news{display:grid;gap:0;border-top:1px solid #e6e1d8}
+.b900-news-item{
+  display:grid;grid-template-columns:110px 1fr auto;gap:22px;align-items:center;
+  padding:20px 4px;border-bottom:1px solid #e6e1d8;transition:background .2s;
+}
+.b900-news-item:hover{background:#faf7f1}
+.b900-news-item time{
+  font-size:12.5px;color:#8a95a3;font-weight:700;letter-spacing:.5px;
+}
+.b900-news-item h3{font-size:15.5px;margin-bottom:4px}
+.b900-news-item p{font-size:13px;color:var(--b900-papermut)}
+.b900-news-type{
+  font-size:11.5px;font-weight:800;color:var(--b900-acc);border:1px solid #f4c9bd;
+  background:#fff4f0;border-radius:6px;padding:3px 10px;white-space:nowrap;
+}
+
+/* ============ FAQ ============ */
+.b900-faq{max-width:900px;margin:0 auto}
+.b900-faq details{
+  background:#fff;border:1px solid #e6e1d8;border-radius:13px;margin-bottom:12px;
+  padding:0 20px;transition:border-color .2s;
+}
+.b900-faq details[open]{border-color:#f2b5a4;box-shadow:0 12px 26px rgba(20,26,34,.07)}
+.b900-faq summary{
+  list-style:none;cursor:pointer;padding:17px 0;font-size:14.6px;font-weight:700;
+  display:flex;align-items:center;gap:12px;
+}
+.b900-faq summary::-webkit-details-marker{display:none}
+.b900-faq summary::before{
+  content:"+";width:20px;height:20px;flex:none;border-radius:6px;background:#f6efe4;
+  color:var(--b900-acc);display:grid;place-items:center;font-weight:800;font-size:14px;
+  transition:.2s;
+}
+.b900-faq details[open] summary::before{content:"−";background:var(--b900-acc);color:#fff}
+.b900-faq p{font-size:13.4px;color:#4a5563;padding:0 0 18px 32px;line-height:1.75}
+
+/* ============ 联系/投稿 ============ */
+.b900-cta{
+  background:
+    radial-gradient(600px 300px at 88% 20%,rgba(255,77,46,.28),transparent 62%),
+    linear-gradient(135deg,#151d26,#1e2a36);
+  color:#fff;border-radius:24px;padding:52px;position:relative;overflow:hidden;
+}
+.b900-cta-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;position:relative;z-index:2}
+.b900-cta h2{font-size:clamp(23px,3vw,31px);margin-bottom:14px;letter-spacing:1px}
+.b900-cta p{font-size:14.2px;color:#b3c0cd;max-width:520px;margin-bottom:22px}
+.b900-cta-actions{display:flex;gap:14px;flex-wrap:wrap}
+.b900-cta-panel{
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);
+  border-radius:16px;padding:22px;
+}
+.b900-cta-panel h3{font-size:14.5px;margin-bottom:12px;letter-spacing:.6px}
+.b900-cta-panel li{display:flex;justify-content:space-between;gap:14px;font-size:13px;padding:8px 0;color:#b8c4d0;border-bottom:1px dashed rgba(255,255,255,.1)}
+.b900-cta-panel li:last-child{border-bottom:0}
+.b900-cta-panel li b{color:#fff;font-weight:600}
+
+/* ============ 页脚 ============ */
+.b900-footer{background:#0c1218;color:#8fa0b0;padding:56px 0 26px;font-size:13.4px}
+.b900-footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.08)}
+.b900-footer h3{font-size:14px;color:#e2e9f0;margin-bottom:14px;letter-spacing:.6px}
+.b900-footer li{margin-bottom:9px}
+.b900-footer a:hover{color:var(--b900-acc2)}
+.b900-footer-brand p{font-size:12.8px;line-height:1.85;color:#7f8f9f;margin-top:12px}
+.b900-footer-bottom{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:22px;font-size:12.4px;color:#6b7a89}
+
+/* ============ 弹窗 / Toast / 回顶 ============ */
+.b900-modal{
+  position:fixed;inset:0;z-index:200;display:none;place-items:center;padding:20px;
+  background:rgba(9,13,18,.72);backdrop-filter:blur(4px);
+}
+.b900-modal.b900-open{display:grid}
+.b900-modal-box{
+  background:#fff;border-radius:20px;max-width:520px;width:100%;padding:30px;
+  box-shadow:0 30px 70px rgba(0,0,0,.4);animation:b900pop .25s ease;
+  max-height:86vh;overflow:auto;
+}
+@keyframes b900pop{from{transform:translateY(14px) scale(.97);opacity:0}to{transform:none;opacity:1}}
+.b900-modal-box h3{font-size:19px;margin-bottom:6px}
+.b900-modal-box .b900-modal-sub{font-size:12.8px;color:#8a95a3;margin-bottom:18px}
+.b900-modal-box label{display:block;font-size:12.8px;font-weight:700;color:#4a5563;margin:14px 0 6px}
+.b900-modal-box input,.b900-modal-box textarea,.b900-modal-box select{
+  width:100%;border:1px solid #e0dacf;border-radius:10px;padding:10px 12px;font-size:13.6px;
+  font-family:inherit;outline:0;background:#fbf9f5;color:#1b2028;
+}
+.b900-modal-box input:focus,.b900-modal-box textarea:focus,.b900-modal-box select:focus{border-color:var(--b900-acc);background:#fff}
+.b900-modal-box textarea{min-height:92px;resize:vertical}
+.b900-modal-actions{display:flex;gap:12px;margin-top:22px}
+.b900-modal-actions .b900-btn-primary,.b900-modal-actions .b900-btn-outline{flex:1;justify-content:center;padding:11px 16px;font-size:14px}
+.b900-modal-actions .b900-btn-outline{color:#4a5563;background:#f5f1ea;border-color:#e0dacf}
+.b900-modal-close{
+  position:absolute;top:14px;right:14px;width:34px;height:34px;border-radius:50%;
+  border:0;background:#f2ede5;color:#5b6675;font-size:17px;
+}
+.b900-modal-wrap{position:relative;width:100%;max-width:520px}
+.b900-modal-box{position:relative}
+.b900-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+  background:#12181f;color:#fff;font-size:13.5px;padding:12px 22px;border-radius:11px;
+  box-shadow:0 16px 34px rgba(0,0,0,.34);opacity:0;pointer-events:none;transition:.28s;z-index:300;
+  border:1px solid rgba(255,255,255,.14);
+}
+.b900-toast.b900-show{opacity:1;transform:translate(-50%,0)}
+.b900-top{
+  position:fixed;right:24px;bottom:26px;width:46px;height:46px;border-radius:13px;
+  background:var(--b900-acc);color:#fff;border:0;display:grid;place-items:center;
+  box-shadow:0 14px 28px rgba(255,77,46,.4);opacity:0;visibility:hidden;transition:.25s;z-index:120;
+}
+.b900-top.b900-show{opacity:1;visibility:visible}
+.b900-top svg{width:20px;height:20px}
+
+/* ============ 响应式 ============ */
+@media (max-width:1040px){
+  .b900-hero-grid{grid-template-columns:1fr;gap:38px}
+  .b900-about-grid{grid-template-columns:1fr}
+  .b900-about-card{position:static}
+  .b900-focus-grid{grid-template-columns:1fr}
+  .b900-vgrid{grid-template-columns:repeat(2,1fr)}
+  .b900-topic-grid{grid-template-columns:1fr 1fr}
+  .b900-creator-grid{grid-template-columns:repeat(2,1fr)}
+  .b900-review-grid{grid-template-columns:1fr 1fr}
+  .b900-rank{grid-template-columns:1fr}
+  .b900-cta-grid{grid-template-columns:1fr}
+  .b900-footer-grid{grid-template-columns:1fr 1fr}
+  .b900-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;
+    background:#131a22;border-bottom:1px solid var(--b900-line);
+    padding:12px 6vw 18px;flex-direction:column;gap:2px;
+  }
+  .b900-nav.b900-nav-open{display:flex}
+  .b900-nav a{padding:11px 12px;font-size:15px}
+  .b900-burger{display:block;margin-left:auto}
+  .b900-header-inner{position:relative;flex-wrap:wrap}
+  .b900-search input{width:110px}
+  .b900-w1,.b900-w2,.b900-w3,.b900-w4,.b900-w5,.b900-w6{grid-column:span 6;aspect-ratio:16/10}
+}
+@media (max-width:640px){
+  html{scroll-padding-top:150px}
+  .b900-sec{padding:54px 0}
+  .b900-vgrid,.b900-topic-grid,.b900-creator-grid,.b900-review-grid{grid-template-columns:1fr}
+  .b900-news-item{grid-template-columns:1fr;gap:6px}
+  .b900-cta{padding:32px 22px;border-radius:18px}
+  .b900-footer-grid{grid-template-columns:1fr}
+  .b900-search{display:none}
+  .b900-header-tools .b900-btn-ghost{display:none}
+  .b900-kpis{gap:22px}
+  .b900-announce-inner{font-size:12.5px}
+  .b900-w1,.b900-w2,.b900-w3,.b900-w4,.b900-w5,.b900-w6{grid-column:span 12}
+  .b900-top{right:14px;bottom:16px}
+  .b900-prose p{font-size:14px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶：公告条 + 页头 -->
+<div class="b900-sticky">
+  <div class="b900-announce">
+    <div class="b900-announce-inner">
+      <span class="b900-announce-tag">官方发布</span>
+      <div class="b900-announce-track" id="b900AnnounceTrack">
+        <span><b>11月18日</b> 新增专题《城市线索档案·第七期》上线</span>
+        <span><b>11月17日</b> 「真实影像创作挑战」报名通道开启，投稿截止12月20日</span>
+        <span><b>11月15日</b> 创作者认证体系升级，新增线索溯源标签</span>
+        <span><b>11月12日</b> 客户端支持高清下载与离线整理功能</span>
+        <span><b>11月18日</b> 新增专题《城市线索档案·第七期》上线</span>
+        <span><b>11月17日</b> 「真实影像创作挑战」报名通道开启，投稿截止12月20日</span>
+        <span><b>11月15日</b> 创作者认证体系升级，新增线索溯源标签</span>
+        <span><b>11月12日</b> 客户端支持高清下载与离线整理功能</span>
+      </div>
+    </div>
+  </div>
+  <header class="b900-header">
+    <div class="b900-header-inner">
+      <a class="b900-logo" href="#b900Home" aria-label="911爆料官方网站首页">
+        <span class="b900-logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="#fff"><path d="M9 6l10 6-10 6z"/></svg>
+        </span>
+        <span class="b900-logo-text"><strong>911爆料</strong><em>OFFICIAL</em></span>
+      </a>
+      <nav class="b900-nav" id="b900Nav" aria-label="主导航">
+        <a href="#b900Home" class="b900-nav-on">首页</a>
+        <a href="#b900Insight">深度解析</a>
+        <a href="#b900Focus">焦点内容</a>
+        <a href="#b900Topics">专题企划</a>
+        <a href="#b900Creators">创作者</a>
+        <a href="#b900Wall">影像墙</a>
+        <a href="#b900News">企业动态</a>
+        <a href="#b900Faq">帮助</a>
+      </nav>
+      <div class="b900-header-tools">
+        <div class="b900-search">
+          <input type="search" id="b900SearchInput" placeholder="搜索专题 / 创作者" aria-label="站内搜索">
+          <button type="button" id="b900SearchBtn">搜索</button>
+        </div>
+        <button type="button" class="b900-btn-ghost" id="b900SubmitOpen">我要投稿</button>
+        <button type="button" class="b900-burger" id="b900Burger" aria-label="展开导航" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="b900-search-feedback" id="b900SearchFeedback" role="status" aria-live="polite"></div>
+  </header>
+</div>
+
+<!-- 首屏 -->
+<section class="b900-hero" id="b900Home">
+  <div class="b900-shell b900-hero-grid">
+    <div>
+      <span class="b900-eyebrow"><i></i>官方网站 · 企业级真实影像社区</span>
+      <h1>911爆料</h1>
+      <p class="b900-hero-sub">真实影像 · 线索溯源 · 内容生态</p>
+      <p class="b900-hero-lead">
+        作为深耕真实影像与线索内容的<b>视频品牌</b>，911爆料官方网站以「可溯源、可讨论、可沉淀」为原则，
+        为创作者与企业搭建高品质内容生态。我们相信每一次记录都值得被认真对待，
+        每一帧画面都能成为理解世界的入口。
+      </p>
+      <div class="b900-hero-actions">
+        <a class="b900-btn-primary" href="#b900Focus">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="#fff"><path d="M8 5l12 7-12 7z"/></svg>
+          浏览焦点内容
+        </a>
+        <a class="b900-btn-outline" href="#b900Creators">认识创作者</a>
+      </div>
+      <div class="b900-kpis">
+        <div class="b900-kpi"><strong>4,280<span>+</span></strong><em>正版内容条目</em></div>
+        <div class="b900-kpi"><strong>620<span>+</span></strong><em>认证创作者</em></div>
+        <div class="b900-kpi"><strong>3,600<span>万</span></strong><em>年度播放时长</em></div>
+      </div>
+      <div class="b900-hero-tagrow">
+        <a href="#b900Topics">#城市线索档案</a>
+        <a href="#b900Topics">#真实影像挑战</a>
+        <a href="#b900Focus">#幕后追踪</a>
+        <a href="#b900Wall">#街巷记录</a>
+      </div>
+    </div>
+    <div class="b900-hero-visual">
+      <div class="b900-hero-frame">
+        <svg viewBox="0 0 640 400" role="img" aria-label="911爆料品牌主视觉：城市夜色中的镜头与光影">
+          <defs>
+            <linearGradient id="b900g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#1d2b3a"/><stop offset="1" stop-color="#0c1218"/>
+            </linearGradient>
+            <linearGradient id="b900g2" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0" stop-color="#ff4d2e"/><stop offset="1" stop-color="#ffb14d"/>
+            </linearGradient>
+            <linearGradient id="b900g3" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#3ad6c4" stop-opacity=".9"/><stop offset="1" stop-color="#3ad6c4" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <rect width="640" height="400" fill="url(#b900g1)"/>
+          <g opacity=".5">
+            <circle cx="510" cy="96" r="58" fill="url(#b900g2)" opacity=".5"/>
+            <circle cx="510" cy="96" r="92" fill="none" stroke="#ff7b5c" stroke-opacity=".28" stroke-width="1.5"/>
+            <circle cx="510" cy="96" r="126" fill="none" stroke="#ff7b5c" stroke-opacity=".15" stroke-width="1.5"/>
+          </g>
+          <g fill="#0a1016">
+            <rect x="40" y="212" width="62" height="188" rx="6"/>
+            <rect x="116" y="168" width="74" height="232" rx="6"/>
+            <rect x="204" y="238" width="58" height="162" rx="6"/>
+            <rect x="276" y="190" width="86" height="210" rx="6"/>
+            <rect x="376" y="248" width="64" height="152" rx="6"/>
+            <rect x="454" y="204" width="80" height="196" rx="6"/>
+            <rect x="548" y="256" width="56" height="144" rx="6"/>
+          </g>
+          <g fill="#3ad6c4" opacity=".85">
+            <rect x="54" y="230" width="10" height="10" rx="2"/>
+            <rect x="74" y="262" width="10" height="10" rx="2"/>
+            <rect x="130" y="190" width="10" height="10" rx="2"/>
+            <rect x="156" y="230" width="10" height="10" rx="2"/>
+            <rect x="290" y="212" width="10" height="10" rx="2"/>
+            <rect x="318" y="256" width="10" height="10" rx="2"/>
+            <rect x="470" y="226" width="10" height="10" rx="2"/>
+            <rect x="500" y="268" width="10" height="10" rx="2"/>
+          </g>
+          <g fill="#ffb14d" opacity=".9">
+            <rect x="218" y="262" width="10" height="10" rx="2"/>
+            <rect x="238" y="300" width="10" height="10" rx="2"/>
+            <rect x="390" y="272" width="10" height="10" rx="2"/>
+            <rect x="562" y="282" width="10" height="10" rx="2"/>
+          </g>
+          <path d="M0 336 Q160 296 320 332 T640 320 L640 400 L0 400 Z" fill="#0a1016" opacity=".85"/>
+          <g transform="translate(320 196)">
+            <circle r="52" fill="none" stroke="url(#b900g2)" stroke-width="4" opacity=".95"/>
+            <circle r="34" fill="#0e1620" stroke="#ff7b5c" stroke-opacity=".5" stroke-width="2"/>
+            <path d="M-10 -14 L18 0 L-10 14 Z" fill="url(#b900g2)"/>
+          </g>
+          <path d="M0 96 L200 0 L360 0 L90 150 Z" fill="url(#b900g3)" opacity=".22"/>
+        </svg>
+        <div class="b900-play-badge" aria-hidden="true"><i></i></div>
+      </div>
+      <div class="b900-hero-float">
+        <span>本周新增线索影像</span><b>138</b><span>条</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 深度解析 / 关键词介绍 -->
+<section class="b900-sec" id="b900Insight">
+  <div class="b900-shell">
+    <div class="b900-sec-head">
+      <h2><small>POSITIONING</small>关于「911爆料」的定位与内容解析</h2>
+      <p>一个以真实影像为基点的视频品牌官网，把行业观察、生活叙事与线索记录放进同一套内容生态里。</p>
+    </div>
+    <div class="b900-about-grid">
+      <aside class="b900-about-card">
+        <h3>品牌关键词 <em>速览</em></h3>
+        <ul class="b900-about-list">
+          <li><b>定位</b>真实影像与线索内容的垂直视频社区</li>
+          <li><b>人群</b>关注公共议题、城市记录与幕后叙事的观众</li>
+          <li><b>形态</b>专题企划 + 创作者矩阵 + 影像档案库</li>
+          <li><b>原则</b>可溯源、可讨论、可沉淀</li>
+          <li><b>目标</b>让每一次记录都被认真对待</li>
+          <li><b>状态</b>持续运营中，每月更新专题企划</li>
+        </ul>
+      </aside>
+      <div class="b900-prose">
+        <p>
+          「911爆料」不是一个把猎奇放在首位的名字，而是一套关于<b>真实影像如何被生产、被验证、被保存</b>的方法论。
+          在信息密度极高、传播速度极快的当下，观众真正缺少的并不是更多片段，而是能让人停下来、看清楚、想明白的完整叙述。
+          911爆料官方网站因此把自己定位为一个垂直领域的视频品牌：我们不追逐夸张的标题，而是把力气花在影像的完整性、线索的来源说明、
+          以及创作者与观众之间的长期信任上。
+        </p>
+        <h3>一、为什么是「爆料」，而不只是「新闻」</h3>
+        <p>
+          在日常语境里，「爆料」常被理解为一种突发的、猎奇的、缺少上下文的信息投递。911爆料希望重新校准这个词——
+          爆的是<b>被忽略的细节</b>，而不是被放大的情绪。一条街头巷尾的短视频，如果附带拍摄时间、地点语境、当事人背景与后续进展，
+          它就从「片段」升级为「线索」；当多位创作者沿着同一条线索各自记录，它就形成了可被讨论的公共叙事。
+          平台为此设计了线索溯源标签、多源对照视图与创作者认证体系，让每一条影像都能被追问：它从哪来，它要说明什么，它是否经得起再看一遍。
+        </p>
+        <h3>二、内容生态：专题、创作者与档案库三层结构</h3>
+        <p>
+          第一部分是<b>专题企划</b>。每一期专题围绕一个具体而克制的问题展开，比如城市更新中的老街区、夜间工作者的时间表、
+          普通人面对突发状况时的第一反应。专题由编辑部与认证创作者共同策划，保持统一的叙事节奏与视觉语言，让观众在一个主题下获得连续、完整的观看体验。
+          第二部分是<b>创作者矩阵</b>。我们邀请纪录片导演、城市摄影师、独立记者、生活方式博主加入，他们各自擅长不同的表达方式，
+          却共享同样的底线：不摆拍、不造谣、不消费他人的困境。第三部分是<b>影像档案库</b>，所有经审核的精品内容都会被编目存档，
+          按时间、地域、主题三个维度建立索引，方便研究者、媒体与普通观众检索与引用。
+        </p>
+        <h3>三、品质与口碑：一套可被检验的内容标准</h3>
+        <p>
+          作为一个企业级平台，911爆料把「品质」拆解成可以被检验的条目：画面是否高清、声音是否可辨、字幕是否准确、
+          信息来源是否标注、是否取得当事人同意、是否存在误导性剪辑。每一条内容在发布前都要经过编辑复核，
+          发布后开放用户反馈通道，若出现事实性错误，平台会在显著位置发布更正说明并记录在动态日志中。
+          我们相信<b>值得信赖</b>不是一句标语，而是由无数个具体动作累积起来的口碑；也正因如此，平台在行业内保持着稳定而克制的增长节奏，
+          成为许多观众长期关注的用户首选之一。
+        </p>
+        <h3>四、社区氛围：让讨论有边界，也有温度</h3>
+        <p>
+          视频之下是评论区，评论区之上是人与人之间的关系。911爆料鼓励<b>有信息量的讨论</b>：补充背景、指出疑点、提供新的线索，
+          而不是单纯的嘲讽与站队。社区设有话题标签、创作者问答、影像共学小组等轻量互动形式，让观众不只是被动接受内容，
+          也能参与内容生态的建设。我们持续运营着一套温和但明确的社区公约，既保护当事人的隐私，也保护表达者的安全感。
+          在多元与包容之间找到平衡，是这个平台长期要做的功课。
+        </p>
+        <h3>五、面向未来：技术、责任与持续的成长</h3>
+        <p>
+          技术会继续改变影像的生产方式，但不会改变判断的标准。911爆料将高清化、可检索、可引用作为基础设施持续投入，
+          同时把社会责任放在商业目标之前——不追逐未经核实的爆点，不鼓励越界的拍摄，不把弱势群体的处境当作流量素材。
+          我们更愿意把平台看作一个长期陪伴观众成长的内容空间：今天你可能只是想看一段城市夜色的记录，
+          明天你也许会成为那个举起镜头的人。创新与匠心并不矛盾，前者让我们走得更快，后者让我们走得更远。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 焦点内容 -->
+<section class="b900-sec b900-sec-alt" id="b900Focus">
+  <div class="b900-shell">
+    <div class="b900-sec-head">
+      <h2><small>FOCUS</small>焦点内容</h2>
+      <p>编辑部本周重点推荐：两部长片、四支短片，覆盖城市记录、行业观察与幕后叙事。</p>
+      <a class="b900-more" href="#b900Wall">查看全部影像 →</a>
+    </div>
+    <div class="b900-focus-grid">
+      <article class="b900-vcard b900-focus-main">
+        <div class="b900-vcard-media">
+          <span class="b900-vcard-badge">本周主推 · 长片</span>
+          <svg viewBox="0 0 640 360" role="img" aria-label="长片封面：雨夜街口的监控塔与撑伞行人">
+            <defs>
+              <linearGradient id="b900f1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#101b26"/><stop offset="1" stop-color="#26333f"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="360" fill="url(#b900f1)"/>
+            <g stroke="#5a6f82" stroke-width="1.2" opacity=".5">
+              <path d="M0 300 L640 268"/><path d="M0 322 L640 300"/>
+            </g>
+            <g fill="#1c2833">
+              <rect x="60" y="120" width="70" height="240"/>
+              <rect x="150" y="76" width="92" height="284"/>
+              <rect x="262" y="150" width="64" height="210"/>
+              <rect x="346" y="104" width="88" height="256"/>
+              <rect x="454" y="168" width="72" height="192"/>
+              <rect x="546" y="132" width="60" height="228"/>
+            </g>
+            <g fill="#ffb14d" opacity=".85">
+              <rect x="72" y="142" width="9" height="9"/><rect x="96" y="180" width="9" height="9"/>
+              <rect x="164" y="100" width="9" height="9"/><rect x="196" y="140" width="9" height="9"/>
+              <rect x="276" y="172" width="9" height="9"/><rect x="360" y="128" width="9" height="9"/>
+              <rect x="396" y="176" width="9" height="9"/><rect x="470" y="190" width="9" height="9"/>
+              <rect x="558" y="156" width="9" height="9"/>
+            </g>
+            <g stroke="#3ad6c4" stroke-width="2" opacity=".8">
+              <line x1="196" y1="60" x2="196" y2="78"/><circle cx="196" cy="52" r="7" fill="#3ad6c4" stroke="none"/>
+              <line x1="196" y1="78" x2="150" y2="140"/><line x1="196" y1="78" x2="250" y2="140"/>
+            </g>
+            <g fill="#0c1218" opacity=".9">
+              <circle cx="330" cy="286" r="10"/><rect x="322" y="296" width="16" height="34" rx="6"/>
+              <path d="M300 300 Q330 268 362 300 Z"/>
+              <line x1="330" y1="322" x2="330" y2="344" stroke="#0c1218" stroke-width="4"/>
+            </g>
+            <g stroke="#8fa3b5" stroke-width="1.4" opacity=".55">
+              <line x1="40" y1="20" x2="40" y2="360"/><line x1="150" y1="0" x2="150" y2="360"/>
+              <line x1="430" y1="0" x2="430" y2="360"/>
+            </g>
+            <rect x="0" y="0" width="640" height="360" fill="url(#b900f1)" opacity=".12"/>
+          </svg>
+          <span class="b900-vcard-play" aria-hidden="true"></span>
+        </div>
+        <div class="b900-vcard-body">
+          <h3>雨夜街口的三小时：一条线索如何被还原</h3>
+          <p>从一份模糊的目击描述出发，摄制组在同一街口连续拍摄了二十七个夜晚，逐帧比对灯光、人流与声音，试图还原那个被反复转述却始终缺少上下文的瞬间。正片四十二分钟，全部素材可溯源。</p>
+          <div class="b900-vcard-meta">
+            <span class="b900-avatar" style="background:#c2260c">林</span>林舟纪实
+            <span>·</span><span>2026-11-18</span><span>·</span><span>12.6万热度</span>
+          </div>
+          <div class="b900-vcard-tags">
+            <span class="b900-chip">城市线索档案</span><span class="b900-chip">幕后追踪</span><span class="b900-chip">长片</span>
+          </div>
+          <div class="b900-vcard-actions">
+            <button class="b900-icobtn b900-like" type="button" data-count="8421">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 11v9H4v-9zM7 11l4-8a2.5 2.5 0 0 1 2.4 3.2L12.6 11H19a2 2 0 0 1 2 2.3l-1.2 6A2 2 0 0 1 17.8 21H7"/></svg>
+              <span class="b900-like-num">8,421</span>
+            </button>
+            <button class="b900-icobtn b900-save" type="button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg>
+              <span class="b900-save-txt">收藏</span>
+            </button>
+            <button class="b900-icobtn b900-share" type="button" data-title="雨夜街口的三小时：一条线索如何被还原">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12v7h16v-7M12 3v12M8 7l4-4 4 4"/></svg>
+              分享
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="b900-vcard">
+        <div class="b900-vcard-media">
+          <span class="b900-vcard-badge">深度观察</span>
+          <svg viewBox="0 0 400 225" role="img" aria-label="封面：夜间便利店中的收银台与冷柜灯光">
+            <defs><linearGradient id="b900f2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1a2732"/><stop offset="1" stop-color="#33424f"/></linearGradient></defs>
+            <rect width="400" height="225" fill="url(#b900f2)"/>
+            <rect x="18" y="30" width="150" height="90" rx="6" fill="#0e151c" stroke="#46596a"/>
+            <g fill="#3ad6c4" opacity=".8"><rect x="28" y="40" width="22" height="14"/><rect x="58" y="40" width="22" height="14"/><rect x="88" y="40" width="22" height="14"/><rect x="28" y="64" width="22" height="14"/><rect x="58" y="64" width="22" height="14"/><rect x="118" y="64" width="22" height="14"/></g>
+            <rect x="200" y="18" width="182" height="130" rx="8" fill="#0e151c" stroke="#46596a"/>
+            <g fill="#ffb14d" opacity=".85"><rect x="214" y="34" width="150" height="8" rx="3"/><rect x="214" y="52" width="110" height="8" rx="3"/><rect x="214" y="70" width="130" height="8" rx="3"/></g>
+            <rect x="210" y="160" width="180" height="46" rx="8" fill="#243340"/>
+            <circle cx="70" cy="176" r="17" fill="#c2260c"/>
+            <rect x="56" y="196" width="28" height="29" rx="8" fill="#1a2732"/>
+            <g stroke="#7f909f" stroke-width="2" opacity=".6"><line x1="0" y1="205" x2="400" y2="205"/></g>
+          </svg>
+          <span class="b900-vcard-play" aria-hidden="true"></span>
+        </div>
+        <div class="b900-vcard-body">
+          <h3>凌晨两点的收银台：夜间工作者的一天</h3>
+          <p>跟拍三位便利店夜班店员，记录他们在城市睡眠时段的真实节奏。</p>
+          <div class="b900-vcard-meta"><span class="b900-avatar" style="background:#2b7a72">苏</span>苏晚观察 <span>·</span> 3.8万热度</div>
+          <div class="b900-vcard-tags"><span class="b900-chip">行业观察</span><span class="b900-chip">城市</span></div>
+          <div class="b900-vcard-actions">
+            <button class="b900-icobtn b900-like" type="button" data-count="2130">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 11v9H4v-9zM7 11l4-8a2.5 2.5 0 0 1 2.4 3.2L12.6 11H19a2 2 0 0 1 2 2.3l-1.2 6A2 2 0 0 1 17.8 21H7"/></svg>
+              <span class="b900-like-num">2,130</span>
+            </button>
+            <button class="b900-icobtn b900-save" type="button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg>
+              <span class="b900-save-txt">收藏</span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="b900-vcard">
+        <div class="b900-vcard-media">
+          <span class="b900-vcard-badge">实用技巧</span>
+          <svg viewBox="0 0 400 225" role="img" aria-label="封面：手持拍摄设备的创作者与补光灯">
+            <defs><linearGradient id="b900f3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a1f33"/><stop offset="1" stop-color="#4a2d3c"/></linearGradient></defs>
+            <rect width="400" height="225" fill="url(#b900f3)"/>
+            <circle cx="288" cy="72" r="46" fill="#ff4d2e" opacity=".22"/>
+            <circle cx="288" cy="72" r="28" fill="#ff7b5c" opacity=".5"/>
+            <rect x="256" y="46" width="64" height="52" rx="8" fill="#12181f" stroke="#c58fa0"/>
+            <circle cx="288" cy="72" r="13" fill="none" stroke="#ffb14d" stroke-width="3"/>
+            <rect x="60" y="86" width="110" height="76" rx="10" fill="#12181f" stroke="#8f6f80"/>
+            <rect x="72" y="98" width="86" height="52" rx="5" fill="#3ad6c4" opacity=".35"/>
+            <g fill="#e8edf2" opacity=".85">
+              <circle cx="140" cy="176" r="12"/><rect x="129" y="188" width="22" height="30" rx="8"/>
+            </g>
+            <g stroke="#d8b8c6" stroke-width="2" opacity=".55"><line x1="30" y1="200" x2="370" y2="200"/><line x1="30" y1="24" x2="370" y2="24"/></g>
+          </svg>
+          <span class="b900-vcard-play" aria-hidden="true"></span>
+        </div>
+        <div class="b900-vcard-body">
+          <h3>一只手、一盏灯：移动端拍摄线索影像的六个细节</h3>
+          <p>从稳定、收音到信息标注，把手机变成可用的记录工具的实操清单。</p>
+          <div class="b900-vcard-meta"><span class="b900-avatar" style="background:#7b4a8f">陈</span>陈拾光 <span>·</span> 2.6万热度</div>
+          <div class="b900-vcard-tags"><span class="b900-chip">教程干货</span><span class="b900-chip">拍摄</span></div>
+          <div class="b900-vcard-actions">
+            <button class="b900-icobtn b900-like" type="button" data-count="1760">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 11v9H4v-9zM7 11l4-8a2.5 2.5 0 0 1 2.4 3.2L12.6 11H19a2 2 0 0 1 2 2.3l-1.2 6A2 2 0 0 1 17.8 21H7"/></svg>
+              <span class="b900-like-num">1,760</span>
+            </button>
+            <button class="b900-icobtn b900-save" type="button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg>
+              <span class="b900-save-txt">收藏</span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="b900-vcard">
+        <div class="b900-vcard-media">
+          <span class="b900-vcard-badge">人物访谈</span>
+          <svg viewBox="0 0 400 225" role="img" aria-label="封面：访谈场景中的两把椅子与录音设备">
+            <defs><linearGradient id="b900f4" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1c2a24"/><stop offset="1" stop-color="#31453a"/></linearGradient></defs>
+            <rect width="400" height="225" fill="url(#b900f4)"/>
+            <rect x="40" y="120" width="120" height="20" rx="6" fill="#3ad6c4" opacity=".55"/>
+            <rect x="64" y="86" width="72" height="36" rx="8" fill="#1e2f28" stroke="#5d8071"/>
+            <rect x="240" y="120" width="120" height="20" rx="6" fill="#ffb14d" opacity=".55"/>
+            <rect x="264" y="86" width="72" height="36" rx="8" fill="#2a2119" stroke="#8a7452"/>
+            <circle cx="200" cy="150" r="26" fill="#0e151c" stroke="#5d8071"/>
+            <circle cx="200" cy="150" r="11" fill="#3ad6c4" opacity=".8"/>
+            <g stroke="#9db8a9" stroke-width="1.6" opacity=".6">
+              <path d="M100 140 L100 60"/><path d="M300 140 L300 60"/><path d="M100 60 Q200 20 300 60"/>
+            </g>
+            <rect x="186" y="58" width="28" height="16" rx="4" fill="#ffb14d"/>
+          </svg>
+          <span class="b900-vcard-play" aria-hidden="true"></span>
+        </div>
+        <div class="b900-vcard-body">
+          <h3>和一位跟拍者聊了四小时：他为什么从不删素材</h3>
+          <p>关于等待、克制与职业伦理，一次节奏极慢但信息密度很高的对谈。</p>
+          <div class="b900-vcard-meta"><span class="b900-avatar" style="background:#3f6b52">周</span>周野访谈 <span>·</span> 1.9万热度</div>
+          <div class="b900-vcard-tags"><span class="b900-chip">人物访谈</span><span class="b900-chip">伦理</span></div>
+          <div class="b900-vcard-actions">
+            <button class="b900-icobtn b900-like" type="button" data-count="1245">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 11v9H4v-9zM7 11l4-8a2.5 2.5 0 0 1 2.4 3.2L12.6 11H19a2 2 0 0 1 2 2.3l-1.2 6A2 2 0 0 1 17.8 21H7"/></svg>
+              <span class="b900-like-num">1,245</span>
+            </button>
+            <button class="b900-icobtn b900-save" type="button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg>
+              <span class="b900-save-txt">收藏</span>
+            </button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 热门视频流 -->
+<section class="b900-sec b900-sec-dark" id="b900Hot">
+  <div class="b900-shell">
+    <div class="b900-sec-head">
+      <h2><small>TRENDING</small>热门影像</h2>
+      <p>社区本周讨论度最高的六条内容，涵盖街巷记录、幕后追踪与生活叙事。</p>
+    </div>
+    <div class="b900-vgrid">
+
+      <article class="b900-vcard">
+        <div class="b900-vcard-media">
+          <span class="b900-vcard-badge">街巷记录</span>
+          <svg viewBox="0 0 400 225" role="img" aria-label="封面：清晨菜市场里排列整齐的蔬菜摊位">
+            <defs><linearGradient id="b900h1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#243b2f"/><stop offset="1" stop-color="#3c5a45"/></linearGradient></defs>
+            <rect width="400" height="225" fill="url(#b900h1)"/>
+            <g fill="#2c4a38"><rect x="0" y="60" width="400" height="8"/><rect x="0" y="52" width="400" height="8" opacity=".6"/></g>
+            <g><rect x="24" y="120" width="86" height="60" rx="6" fill="#8a5a2b"/><rect x="120" y="130" width="80" height="50" rx="6" fill="#6f5124"/><rect x="214" y="118" width="88" height="62" rx="6" fill="#8a5a2b"/><rect x="316" y="134" width="64" height="46" rx="6" fill="#6f5124"/></g>
+            <g fill="#c8d96b"><circle cx="46" cy="110" r="10"/><circle cx="66" cy="110" r="10"/><circle cx="86" cy="110" r="10"/></g>
+            <g fill="#e06a4a"><circle cx="138" cy="120" r="9"/><circle cx="156" cy="120" r="9"/><circle cx="174" cy="120" r="9"/></g>
+            <g fill="#6bc8b8"><circle cx="238" cy="108" r="10"/><circle cx="258" cy="108" r="10"/><circle cx="278" cy="108" r="10"/></g>
+            <g fill="#f0d27a"><circle cx="330" cy="124" r="8"/><circle cx="348" cy="124" r="8"/></g>
+            <g stroke="#d8e6dd" stroke-width="2" opacity=".55"><line x1="0" y1="150" x2="400" y2="150"/></g>
+            <rect x="0" y="180" width="400" height="45" fill="#1a2b21"/>
+          </svg>
+          <span class="b900-vcard-play" aria-hidden="true"></span>
+        </div>
+        <div class="b900-vcard-body">
+          <h3>清晨五点半的菜市场，和三十年的老摊主</h3>
+          <p>一条街的作息时间表，藏在摊主们搬货的脚步里。</p>
+          <div class="b900-vcard-meta"><span class="b900-avatar" style="background:#3f6b52">吴</span>吴巷子 <span>·</span> 2.1万</div>
+          <div class="b900-vcard-tags"><span class="b900-chip">日常记录</span><span class="b900-chip">城市</span></div>
+          <div class="b900-vcard-actions">
+            <button class="b900-icobtn b900-like" type="button" data-count="3120">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 11v9H4v-9zM7 11l4-8a2.5 2.5 0 0 1 2.4 3.2L12.6 11H19a2 2 0 0 1 2 2.3l-1.2 6A2 2 0 0 1 17.8 21H7"/></svg>
+              <span class="b900-like-num">3,120</span>
+            </button>
+            <button class="b900-icobtn b900-save" type="button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg>
+              <span class="b900-save-txt">收藏</span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="b900-vcard">
+        <div class="b900-vcard-media">
+          <span class="b900-vcard-badge">幕后追踪</span>
+          <svg viewBox="0 0 400 225" role="img" aria-label="封面：剪辑室多屏工作台与时间线">
+            <defs><linearGradient id="b900h2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#141c28"/><stop offset="1" stop-color="#232f42"/></linearGradient></defs>
+            <rect width="400" height="225" fill="url(#b900h2)"/>
+            <rect x="30" y="34" width="150" height="86" rx="6" fill="#0a1016" stroke="#3d5570"/>
+            <rect x="44" y="48" width="122" height="58" rx="3" fill="#3ad6c4" opacity=".28"/>
+            <rect x="196" y="34" width="174" height="86" rx="6" fill="#0a1016" stroke="#3d5570"/>
+            <g fill="#ffb14d" opacity=".8"><rect x="210" y="48" width="60" height="7" rx="3"/><rect x="210" y="62" width="120" height="7" rx="3"/><rect x="210" y="76" width="90" height="7" rx="3"/><rect x="210" y="90" width="132" height="7" rx="3"/></g>
+            <rect x="30" y="140" width="340" height="60" rx="6" fill="#0e1520" stroke="#3d5570"/>
+            <g fill="#2c3d52"><rect x="44" y="152" width="90" height="14" rx="3"/><rect x="140" y="152" width="130" height="14" rx="3"/><rect x="276" y="152" width="80" height="14" rx="3"/></g>
+            <g fill="#ff4d2e"><rect x="140" y="172" width="46" height="10" rx="3"/><rect x="200" y="172" width="26" height="10" rx="3"/></g>
+          </svg>
+          <span class="b900-vcard-play" aria-hidden="true"></span>
+        </div>
+        <div class="b900-vcard-body">
+          <h3>四十二分钟正片，是怎么从十一小时素材里长出来的</h3>
+          <p>剪辑师拆解一条线索影像的结构：取舍比拍摄更难。</p>
+          <div class="b900-vcard-meta"><span class="b900-avatar" style="background:#2f4a7a">郑</span>郑一帧 <span>·</span> 1.8万</div>
+          <div class="b900-vcard-tags"><span class="b900-chip">创作幕后</span><span class="b900-chip">剪辑</span></div>
+          <div class="b900-vcard-actions">
+            <button class="b900-icobtn b900-like" type="button" data-count="2680">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 11v9H4v-9zM7 11l4-8a2.5 2.5 0 0 1 2.4 3.2L12.6 11H19a2 2 0 0 1 2 2.3l-1.2 6A2 2 0 0 1 17.8 21H7"/></svg>
+              <span class="b900-like-num">2,680</span>
+            </button>
+            <button class="b900-icobtn b900-save" type="button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg>
+              <span class="b900-save-txt">收藏</span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="b900-vcard">
+        <div class="b900-vcard-media">
+          <span class="b900-vcard-badge">知识科普</span>
+          <svg viewBox="0 0 400 225" role="img" aria-label="封面：信息核验流程图与放大镜图形">
+            <defs><linearGradient id="b900h3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a2438"/><stop offset="1" stop-color="#3d3450"/></linearGradient></defs>
+            <rect width="400" height="225" fill="url(#b900h3)"/>
+            <g stroke="#c8b6e8" stroke-width="2" opacity=".7" fill="none">
+              <rect x="34" y="46" width="72" height="42" rx="8"/>
+              <rect x="146" y="46" width="72" height="42" rx="8"/>
+              <rect x="258" y="46" width="72" height="42" rx="8"/>
+              <path d="M106 67 H146"/><path d="M218 67 H258"/>
+            </g>
+            <g fill="#e8ddff" font-size="13" font-family="sans-serif" text-anchor="middle">
+              <text x="70" y="72">来源</text><text x="182" y="72">对照</text><text x="294" y="72">确认</text>
+            </g>
+            <g stroke="#ffb14d" stroke-width="3" fill="none"><circle cx="200" cy="158" r="34"/><line x1="224" y1="182" x2="252" y2="208"/></g>
+            <g fill="#ffb14d" opacity=".7"><rect x="186" y="150" width="28" height="6" rx="3"/><rect x="186" y="162" width="20" height="6" rx="3"/></g>
+          </svg>
+          <span class="b900-vcard-play" aria-hidden="true"></span>
+        </div>
+        <div class="b900-vcard-body">
+          <h3>看到一段视频先别转：三个步骤判断信息可信度</h3>
+          <p>时间、地点、来源，用最朴素的方法做一次快速核验。</p>
+          <div class="b900-vcard-meta"><span class="b900-avatar" style="background:#6b4a9c">何</span>何校核 <span>·</span> 3.4万</div>
+          <div class="b900-vcard-tags"><span class="b900-chip">知识科普</span><span class="b900-chip">核验</span></div>
+          <div class="b900-vcard-actions">
+            <button class="b900-icobtn b900-like" type="button" data-count="4890">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 11v9H4v-9zM7 11l4-8a2.5 2.5 0 0 1 2.4 3.2L12.6 11H19a2 2 0 0 1 2 2.3l-1.2 6A2 2 0 0 1 17.8 21H7"/></svg>
+              <span class="b900-like-num">4,890</span>
+            </button>
+            <button class="b900-icobtn b900-save" type="button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg>
+              <span class="b900-save-txt">收藏</span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="b900-vcard">
+        <div class="b900-vcard-media">
+          <span class="b900-vcard-badge">治愈影像</span>
+          <svg viewBox="0 0 400 225" role="img" aria-label="封面：黄昏中的旧居民楼与晾衣绳">
+            <defs><linearGradient id="b900h4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f0a86a"/><stop offset="1" stop-color="#c2683f"/></linearGradient></defs>
+            <rect width="400" height="225" fill="url(#b900h4)"/>
+            <circle cx="316" cy="52" r="30" fill="#ffe6b8" opacity=".8"/>
+            <g fill="#7a4030" opacity=".9">
+              <rect x="26" y="86" width="118" height="139" rx="5"/>
+              <rect x="160" y="110" width="92" height="115" rx="5"/>
+              <rect x="268" y="72" width="106" height="153" rx="5"/>
+            </g>
+            <g fill="#ffd9a8" opacity=".75">
+              <rect x="42" y="102" width="20" height="16"/><rect x="72" y="102" width="20" height="16"/><rect x="102" y="102" width="20" height="16"/>
+              <rect x="42" y="132" width="20" height="16"/><rect x="102" y="132" width="20" height="16"/>
+              <rect x="176" y="126" width="18" height="14"/><rect x="206" y="126" width="18" height="14"/>
+              <rect x="284" y="90" width="22" height="17"/><rect x="320" y="90" width="22" height="17"/><rect x="284" y="122" width="22" height="17"/>
+            </g>
+            <g stroke="#fff2d6" stroke-width="1.6" opacity=".8"><line x1="26" y1="72" x2="374" y2="72"/><path d="M60 72 L60 96"/><path d="M120 72 L120 96"/><path d="M200 72 L200 96"/><path d="M300 72 L300 96"/></g>
+            <g fill="#fff2d6" opacity=".9"><rect x="62" y="76" width="26" height="18" rx="3"/><rect x="122" y="76" width="20" height="22" rx="3"/><rect x="202" y="76" width="24" height="16" rx="3"/><rect x="302" y="76" width="22" height="20" rx="3"/></g>
+            <rect x="0" y="200" width="400" height="25" fill="#5c3125"/>
+          </svg>
+          <span class="b900-vcard-play" aria-hidden="true"></span>
+        </div>
+        <div class="b900-vcard-body">
+          <h3>老楼里的晾衣绳，挂着一整栋楼的时间</h3>
+          <p>一段无旁白的六分钟影像，只有风声、水声和邻居的招呼。</p>
+          <div class="b900-vcard-meta"><span class="b900-avatar" style="background:#b8623c">许</span>许小满 <span>·</span> 2.9万</div>
+          <div class="b900-vcard-tags"><span class="b900-chip">治愈影像</span><span class="b900-chip">无旁白</span></div>
+          <div class="b900-vcard-actions">
+            <button class="b900-icobtn b900-like" type="button" data-count="5230">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 11v9H4v-9zM7 11l4-8a2.5 2.5 0 0 1 2.4 3.2L12.6 11H19a2 2 0 0 1 2 2.3l-1.2 6A2 2 0 0 1 17.8 21H7"/></svg>
+              <span class="b900-like-num">5,230</span>
+            </button>
+            <button class="b900-icobtn b900-save" type="button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg>
+              <span class="b900-save-txt">收藏</span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="b900-vcard">
+        <div class="b900-vcard-media">
+          <span class="b900-vcard-badge">实用技巧</span>
+          <svg viewBox="0 0 400 225" role="img" aria-label="封面：录音设备与声波图形">
+            <defs><linearGradient id="b900h5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#182833"/><stop offset="1" stop-color="#274049"/></linearGradient></defs>
+            <rect width="400" height="225" fill="url(#b900h5)"/>
+            <rect x="36" y="62" width="96" height="110" rx="12" fill="#0d151b" stroke="#4a6a75"/>
+            <circle cx="84" cy="104" r="24" fill="none" stroke="#3ad6c4" stroke-width="3"/>
+            <circle cx="84" cy="104" r="9" fill="#3ad6c4"/>
+            <g fill="#3ad6c4" opacity=".7"><rect x="54" y="142" width="60" height="6" rx="3"/><rect x="54" y="154" width="38" height="6" rx="3"/></g>
+            <g stroke="#ffb14d" stroke-width="3" stroke-linecap="round" opacity=".9">
+              <line x1="170" y1="112" x2="170" y2="112"/>
+              <line x1="190" y1="86" x2="190" y2="136"/>
+              <line x1="210" y1="66" x2="210" y2="156"/>
+              <line x1="230" y1="94" x2="230" y2="128"/>
+              <line x1="250" y1="54" x2="250" y2="168"/>
+              <line x1="270" y1="82" x2="270" y2="140"/>
+              <line x1="290" y1="100" x2="290" y2="122"/>
+              <line x1="310" y1="72" x2="310" y2="150"/>
+              <line x1="330" y1="92" x2="330" y2="130"/>
+              <line x1="350" y1="108" x2="350" y2="114"/>
+            </g>
+          </svg>
+          <span class="b900-vcard-play" aria-hidden="true"></span>
+        </div>
+        <div class="b900-vcard-body">
+          <h3>收音比画面更重要：外拍现场的声音采集清单</h3>
+          <p>风噪、回声、人声层次，一份可以打印带走的现场检查表。</p>
+          <div class="b900-vcard-meta"><span class="b900-avatar" style="background:#2b7a72">冯</span>冯声场 <span>·</span> 1.4万</div>
+          <div class="b900-vcard-tags"><span class="b900-chip">教程干货</span><span class="b900-chip">声音</span></div>
+          <div class="b900-vcard-actions">
+            <button class="b900-icobtn b900-like" type="button" data-count="1560">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 11v9H4v-9zM7 11l4-8a2.5 2.5 0 0 1 2.4 3.2L12.6 11H19a2 2 0 0 1 2 2.3l-1.2 6A2 2 0 0 1 17.8 21H7"/></svg>
+              <span class="b900-like-num">1,560</span>
+            </button>
+            <button class="b900-icobtn b900-save" type="button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg>
+              <span class="b900-save-txt">收藏</span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="b900-vcard">
+        <div class="b900-vcard-media">
+          <span class="b900-vcard-badge">情感故事</span>
+          <svg viewBox="0 0 400 225" role="img" aria-label="封面：车站候车厅里提着行李的背影">
+            <defs><linearGradient id="b900h6" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1f2a3c"/><stop offset="1" stop-color="#38485e"/></linearGradient></defs>
+            <rect width="400" height="225" fill="url(#b900h6)"/>
+            <rect x="0" y="0" width="400" height="120" fill="#16202e"/>
+            <g fill="#26364a"><rect x="20" y="24" width="360" height="8"/><rect x="40" y="46" width="150" height="46" rx="4"/><rect x="210" y="46" width="150" height="46" rx="4"/></g>
+            <g fill="#ffe0a8" opacity=".8"><rect x="52" y="58" width="18" height="22"/><rect x="80" y="58" width="18" height="22"/><rect x="222" y="58" width="18" height="22"/><rect x="250" y="58" width="18" height="22"/></g>
+            <rect x="0" y="120" width="400" height="105" fill="#223043"/>
+            <g fill="#0d151d">
+              <circle cx="176" cy="120" r="13"/><rect x="164" y="134" width="24" height="46" rx="9"/>
+              <rect x="150" y="176" width="12" height="34" rx="5"/><rect x="190" y="176" width="12" height="34" rx="5"/>
+              <rect x="192" y="140" width="26" height="34" rx="5"/>
+            </g>
+            <rect x="216" y="160" width="44" height="18" rx="4" fill="#c2260c"/>
+            <g stroke="#7d8fa3" stroke-width="1.6" opacity=".55"><line x1="0" y1="150" x2="400" y2="150"/></g>
+          </svg>
+          <span class="b900-vcard-play" aria-hidden="true"></span>
+        </div>
+        <div class="b900-vcard-body">
+          <h3>他带着一封没寄出的信，坐了七小时夜车</h3>
+          <p>一次没有结局的寻找，和一段被镜头留住的沉默。</p>
+          <div class="b900-vcard-meta"><span class="b900-avatar" style="background:#4a5f8f">唐</span>唐未寄 <span>·</span> 2.3万</div>
+          <div class="b900-vcard-tags"><span class="b900-chip">情感故事</span><span class="b900-chip">短片</span></div>
+          <div class="b900-vcard-actions">
+            <button class="b900-icobtn b900-like" type="button" data-count="3410">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 11v9H4v-9zM7 11l4-8a2.5 2.5 0 0 1 2.4 3.2L12.6 11H19a2 2 0 0 1 2 2.3l-1.2 6A2 2 0 0 1 17.8 21H7"/></svg>
+              <span class="b900-like-num">3,410</span>
+            </button>
+            <button class="b900-icobtn b900-save" type="button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg>
+              <span class="b900-save-txt">收藏</span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 专题企划 -->
+<section class="b900-sec b900-sec-alt" id="b900Topics">
+  <div class="b900-shell">
+    <div class="b900-sec-head">
+      <h2><small>SPECIAL</small>专题企划</h2>
+      <p>以问题为导向的长线栏目，每期聚焦一个具体议题，持续更新、可收藏追踪。</p>
+    </div>
+    <div class="b900-topic-grid">
+      <a class="b900-topic" href="#b900Focus">
+        <svg viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs><linearGradient id="b900t1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a2a3a"/><stop offset="1" stop-color="#2f4a5f"/></linearGradient></defs>
+          <rect width="400" height="260" fill="url(#b900t1)"/>
+          <g fill="#0e1822"><rect x="20" y="120" width="52" height="140"/><rect x="84" y="86" width="68" height="174"/><rect x="164" y="140" width="48" height="120"/><rect x="224" y="104" width="72" height="156"/><rect x="308" y="150" width="58" height="110"/></g>
+          <g fill="#3ad6c4" opacity=".8"><rect x="32" y="136" width="8" height="8"/><rect x="52" y="164" width="8" height="8"/><rect x="98" y="102" width="8" height="8"/><rect x="126" y="140" width="8" height="8"/><rect x="236" y="120" width="8" height="8"/><rect x="264" y="160" width="8" height="8"/></g>
+          <circle cx="316" cy="60" r="34" fill="#ff4d2e" opacity=".4"/>
+        </svg>
+        <div class="b900-topic-in">
+          <span class="b900-topic-state b900-state-hot">更新中 · 第7期</span>
+          <h3>城市线索档案</h3>
+          <p>一条街、一段时间、一群人的共同记忆，用影像建立可检索的城市切片。</p>
+          <span>已收录 26 条影像 · 每周五更新</span>
+        </div>
+      </a>
+      <a class="b900-topic" href="#b900Creators">
+        <svg viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs><linearGradient id="b900t2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3a2a1c"/><stop offset="1" stop-color="#5c3f28"/></linearGradient></defs>
+          <rect width="400" height="260" fill="url(#b900t2)"/>
+          <g stroke="#f0b46a" stroke-width="2" fill="none" opacity=".75">
+            <circle cx="128" cy="120" r="52"/><circle cx="128" cy="120" r="30"/>
+            <rect x="228" y="60" width="120" height="88" rx="10"/>
+          </g>
+          <g fill="#f0b46a" opacity=".55"><rect x="248" y="80" width="80" height="8" rx="4"/><rect x="248" y="98" width="56" height="8" rx="4"/><rect x="248" y="116" width="70" height="8" rx="4"/></g>
+          <rect x="40" y="200" width="320" height="10" rx="5" fill="#f0b46a" opacity=".4"/>
+        </svg>
+        <div class="b900-topic-in">
+          <span class="b900-topic-state">常设企划</span>
+          <h3>镜头背后的人</h3>
+          <p>不拍主角，只拍举着机器的人。聊聊他们的犹豫、坚持与职业边界。</p>
+          <span>已上线 18 期 · 双周一更</span>
+        </div>
+      </a>
+      <a class="b900-topic" href="#b900Wall">
+        <svg viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs><linearGradient id="b900t3" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#2b1f33"/><stop offset="1" stop-color="#4d3150"/></linearGradient></defs>
+          <rect width="400" height="260" fill="url(#b900t3)"/>
+          <g fill="none" stroke="#e0a8d8" stroke-width="2" opacity=".7">
+            <path d="M40 210 Q120 120 200 170 T360 100"/>
+            <path d="M40 180 Q120 90 200 140 T360 70"/>
+          </g>
+          <g fill="#e0a8d8" opacity=".8">
+            <circle cx="80" cy="176" r="7"/><circle cx="160" cy="160" r="7"/><circle cx="250" cy="130" r="7"/><circle cx="330" cy="96" r="7"/>
+          </g>
+          <rect x="60" y="40" width="280" height="46" rx="10" fill="#e0a8d8" opacity=".22"/>
+          <g fill="#f4e3f2" opacity=".7"><rect x="80" y="56" width="120" height="8" rx="4"/><rect x="80" y="70" width="80" height="8" rx="4"/></g>
+        </svg>
+        <div class="b900-topic-in">
+          <span class="b900-topic-state">征集中</span>
+          <h3>真实影像创作挑战</h3>
+          <p>面向所有创作者开放报名，用一支三分钟短片，讲述你身边被忽略的细节。</p>
+          <span>投稿截止 12 月 20 日 · 已有 214 人参与</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 创作者矩阵 -->
+<section class="b900-sec" id="b900Creators">
+  <div class="b900-shell">
+    <div class="b900-sec-head">
+      <h2><small>CREATORS</small>创作者矩阵</h2>
+      <p>他们来自纪录片、新闻摄影、城市研究、生活方式等不同领域，共同构成平台的内容底色。</p>
+    </div>
+    <div class="b900-creator-grid">
+      <div class="b900-creator">
+        <div class="b900-creator-av" style="background:linear-gradient(140deg,#ff5a34,#b7280d)">林</div>
+        <h3>林舟纪实</h3>
+        <em>纪实长片 · 城市线索</em>
+        <p>十年跟拍经验，擅长在同一个机位等待足够长的时间。代表作《雨夜街口的三小时》。</p>
+        <div class="b900-creator-nums">
+          <div><b>86</b>作品</div><div><b>42.6万</b>关注</div>
+        </div>
+        <button class="b900-creator-more" type="button" data-creator="林舟纪实">查看档案</button>
+      </div>
+      <div class="b900-creator">
+        <div class="b900-creator-av" style="background:linear-gradient(140deg,#3ad6c4,#1d7d74)">苏</div>
+        <h3>苏晚观察</h3>
+        <em>行业观察 · 夜间经济</em>
+        <p>关注被时间切分的人群，用平视的镜头记录夜班、早班与交接班的日常。</p>
+        <div class="b900-creator-nums">
+          <div><b>54</b>作品</div><div><b>28.3万</b>关注</div>
+        </div>
+        <button class="b900-creator-more" type="button" data-creator="苏晚观察">查看档案</button>
+      </div>
+      <div class="b900-creator">
+        <div class="b900-creator-av" style="background:linear-gradient(140deg,#8a5cc4,#4b2d7a)">陈</div>
+        <h3>陈拾光</h3>
+        <em>拍摄教学 · 移动端影像</em>
+        <p>主张「设备不是门槛」，持续输出可以立刻上手的现场拍摄方法。</p>
+        <div class="b900-creator-nums">
+          <div><b>127</b>作品</div><div><b>63.1万</b>关注</div>
+        </div>
+        <button class="b900-creator-more" type="button" data-creator="陈拾光">查看档案</button>
+      </div>
+      <div class="b900-creator">
+        <div class="b900-creator-av" style="background:linear-gradient(140deg,#5f8a4d,#35542b)">周</div>
+        <h3>周野访谈</h3>
+        <em>人物访谈 · 职业伦理</em>
+        <p>做慢节奏长访谈，关心创作者在关键时刻如何做选择。</p>
+        <div class="b900-creator-nums">
+          <div><b>41</b>作品</div><div><b>19.7万</b>关注</div>
+        </div>
+        <button class="b900-creator-more" type="button" data-creator="周野访谈">查看档案</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 影像墙 -->
+<section class="b900-sec b900-sec-alt" id="b900Wall">
+  <div class="b900-shell">
+    <div class="b900-sec-head">
+      <h2><small>GALLERY</small>影像墙</h2>
+      <p>来自创作者的日常切片，混合大小尺寸陈列，每一帧都保留了拍摄现场的气息。</p>
+    </div>
+    <div class="b900-wall">
+      <figure class="b900-wall-item b900-w1">
+        <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="影像墙大图：黄昏时分的旧城区屋顶与天线">
+          <defs><linearGradient id="b900w1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eaa06a"/><stop offset="1" stop-color="#a4523a"/></linearGradient></defs>
+          <rect width="400" height="300" fill="url(#b900w1)"/>
+          <circle cx="316" cy="70" r="36" fill="#ffe9c2" opacity=".85"/>
+          <g fill="#6b3a2a"><rect x="0" y="180" width="120" height="120"/><rect x="130" y="150" width="100" height="150"/><rect x="240" y="196" width="160" height="104"/></g>
+          <g stroke="#5c3125" stroke-width="2"><line x1="60" y1="180" x2="60" y2="120"/><line x1="60" y1="120" x2="90" y2="110"/><line x1="60" y1="140" x2="34" y2="128"/></g>
+          <g stroke="#5c3125" stroke-width="1.6"><line x1="200" y1="150" x2="200" y2="96"/><line x1="200" y1="96" x2="180" y2="80"/><line x1="200" y1="110" x2="222" y2="94"/></g>
+          <g fill="#ffd9a8" opacity=".8"><rect x="20" y="200" width="18" height="16"/><rect x="150" y="172" width="18" height="16"/><rect x="260" y="214" width="18" height="16"/></g>
+        </svg>
+        <figcaption>黄昏屋顶｜旧城区第 12 号拍摄点</figcaption>
+      </figure>
+      <figure class="b900-wall-item b900-w2">
+        <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" role="img" aria-label="影像墙中图：夜色中的过街天桥与车流">
+          <defs><linearGradient id="b900w2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#161f2b"/><stop offset="1" stop-color="#2b3a4a"/></linearGradient></defs>
+          <rect width="400" height="250" fill="url(#b900w2)"/>
+          <rect x="0" y="150" width="400" height="100" fill="#0d141b"/>
+          <g fill="#1f2c3a"><rect x="20" y="56" width="80" height="94"/><rect x="120" y="40" width="70" height="110"/><rect x="300" y="66" width="76" height="84"/></g>
+          <g stroke="#ffb14d" stroke-width="2" opacity=".9"><line x1="0" y1="178" x2="400" y2="162"/><line x1="0" y1="200" x2="400" y2="188"/></g>
+          <g fill="#ff4d2e" opacity=".85"><rect x="120" y="168" width="14" height="6" rx="3"/><rect x="230" y="178" width="14" height="6" rx="3"/><rect x="312" y="186" width="14" height="6" rx="3"/></g>
+          <rect x="0" y="120" width="400" height="12" fill="#3a4b5c" opacity=".8"/>
+        </svg>
+        <figcaption>过街天桥｜深夜车流的两种速度</figcaption>
+      </figure>
+      <figure class="b900-wall-item b900-w3">
+        <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="影像墙方图：桌面上的录音笔与笔记本">
+          <defs><linearGradient id="b900w3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3c4a3a"/><stop offset="1" stop-color="#5c6b50"/></linearGradient></defs>
+          <rect width="300" height="300" fill="url(#b900w3)"/>
+          <rect x="40" y="90" width="220" height="140" rx="10" fill="#22301f"/>
+          <rect x="62" y="112" width="80" height="96" rx="6" fill="#d8d2b8"/>
+          <g stroke="#8a856f" stroke-width="2"><line x1="74" y1="130" x2="130" y2="130"/><line x1="74" y1="146" x2="130" y2="146"/><line x1="74" y1="162" x2="118" y2="162"/><line x1="74" y1="178" x2="126" y2="178"/></g>
+          <rect x="164" y="140" width="72" height="54" rx="8" fill="#12181a" stroke="#7d8f74"/>
+          <circle cx="200" cy="167" r="12" fill="#ffb14d" opacity=".85"/>
+          <rect x="186" y="204" width="28" height="6" rx="3" fill="#7d8f74"/>
+        </svg>
+        <figcaption>稿件现场｜录音笔与第三版笔记</figcaption>
+      </figure>
+      <figure class="b900-wall-item b900-w4">
+        <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" role="img" aria-label="影像墙中图：雨天的公交站台与积水倒影">
+          <defs><linearGradient id="b900w4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#39485a"/><stop offset="1" stop-color="#61707f"/></linearGradient></defs>
+          <rect width="400" height="250" fill="url(#b900w4)"/>
+          <rect x="0" y="150" width="400" height="100" fill="#4a5867"/>
+          <rect x="60" y="70" width="220" height="12" rx="4" fill="#22303c"/>
+          <rect x="70" y="82" width="8" height="70" fill="#22303c"/><rect x="262" y="82" width="8" height="70" fill="#22303c"/>
+          <g stroke="#b9c8d6" stroke-width="1.6" opacity=".7">
+            <line x1="40" y1="30" x2="34" y2="66"/><line x1="120" y1="20" x2="114" y2="60"/><line x1="220" y1="34" x2="214" y2="72"/><line x1="320" y1="24" x2="314" y2="64"/>
+          </g>
+          <g fill="#22303c"><circle cx="160" cy="112" r="9"/><rect x="152" y="122" width="16" height="30" rx="6"/></g>
+          <g opacity=".35" fill="#22303c"><circle cx="160" cy="176" r="9"/><rect x="152" y="186" width="16" height="30" rx="6"/></g>
+        </svg>
+        <figcaption>雨天站台｜等车的十四分钟</figcaption>
+      </figure>
+      <figure class="b900-wall-item b900-w5">
+        <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="影像墙方图：清晨窗台上的绿植与光斑">
+          <defs><linearGradient id="b900w5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8dfc6"/><stop offset="1" stop-color="#c9bd9a"/></linearGradient></defs>
+          <rect width="300" height="300" fill="url(#b900w5)"/>
+          <rect x="0" y="180" width="300" height="120" fill="#a89a78"/>
+          <rect x="40" y="118" width="60" height="62" rx="6" fill="#a4663f"/>
+          <g fill="#5f8a4d"><ellipse cx="70" cy="98" rx="22" ry="30"/><ellipse cx="50" cy="112" rx="14" ry="20"/><ellipse cx="90" cy="112" rx="14" ry="20"/></g>
+          <rect x="150" y="150" width="90" height="30" rx="6" fill="#7a6a4a"/>
+          <g fill="#f5eecf" opacity=".85"><circle cx="200" cy="70" r="20"/><circle cx="240" cy="96" r="12"/></g>
+          <g stroke="#8f805f" stroke-width="2" opacity=".7"><line x1="0" y1="40" x2="300" y2="40"/><line x1="0" y1="150" x2="300" y2="150"/></g>
+        </svg>
+        <figcaption>窗台光斑｜一个无人打扰的上午</figcaption>
+      </figure>
+      <figure class="b900-wall-item b900-w6">
+        <svg viewBox="0 0 640 280" preserveAspectRatio="xMidYMid slice" role="img" aria-label="影像墙宽图：开阔河岸与远处的城市天际线">
+          <defs><linearGradient id="b900w6" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9fb6c4"/><stop offset=".6" stop-color="#c9d5da"/><stop offset="1" stop-color="#8fa0a8"/></linearGradient></defs>
+          <rect width="640" height="280" fill="url(#b900w6)"/>
+          <g fill="#7a8b96" opacity=".8">
+            <rect x="360" y="120" width="26" height="70"/><rect x="396" y="96" width="20" height="94"/><rect x="426" y="132" width="34" height="58"/><rect x="470" y="112" width="22" height="78"/><rect x="502" y="140" width="40" height="50"/><rect x="552" y="126" width="18" height="64"/>
+          </g>
+          <rect x="0" y="190" width="640" height="90" fill="#8aa0aa"/>
+          <g stroke="#e4edf1" stroke-width="2" opacity=".8"><line x1="20" y1="214" x2="300" y2="214"/><line x1="380" y1="230" x2="620" y2="230"/></g>
+          <g fill="#5f7480"><ellipse cx="120" cy="248" rx="46" ry="8"/><ellipse cx="520" cy="256" rx="56" ry="9"/></g>
+          <g stroke="#6b7d88" stroke-width="2" opacity=".6"><line x1="0" y1="96" x2="640" y2="96"/></g>
+        </svg>
+        <figcaption>河岸远景｜城市与水的交界线</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 用户评价 + 榜单 -->
+<section class="b900-sec" id="b900Reviews">
+  <div class="b900-shell">
+    <div class="b900-sec-head">
+      <h2><small>VOICES</small>社区评价</h2>
+      <p>来自观众与创作者的真实反馈，长短不一，角度各异，我们完整保留。</p>
+    </div>
+    <div class="b900-review-grid">
+      <div class="b900-review">
+        <div class="b900-review-top">
+          <span class="b900-avatar" style="background:#c2260c">阿</span>
+          <div><h3>阿澄的日常</h3><em>关注 2 年</em></div>
+        </div>
+        <p>最打动我的是它不急着给结论。一条线索能拍三十天，还愿意把过程放出来，这在现在的短视频环境里挺少见的。</p>
+        <div class="b900-review-stars">★★★★★</div>
+      </div>
+      <div class="b900-review">
+        <div class="b900-review-top">
+          <span class="b900-avatar" style="background:#2b7a72">老</span>
+          <div><h3>老周不加班</h3><em>创作者认证用户</em></div>
+        </div>
+        <p>投稿流程很清楚，编辑会逐条回复问题，甚至告诉我哪一段节奏拖了。作为创作者，被认真对待的感觉很重要。</p>
+        <div class="b900-review-stars">★★★★★</div>
+      </div>
+      <div class="b900-review">
+        <div class="b900-review-top">
+          <span class="b900-avatar" style="background:#4a5f8f">小</span>
+          <div><h3>小满在读书</h3><em>新加入用户</em></div>
+        </div>
+        <p>界面干净，专题分类做得好。希望能多出一些城市以外的题材，比如乡镇和工厂，感觉还有很多故事没被拍。</p>
+        <div class="b900-review-stars">★★★★☆</div>
+      </div>
+      <div class="b900-review">
+        <div class="b900-review-top">
+          <span class="b900-avatar" style="background:#7b4a8f">镜</span>
+          <div><h3>镜头后的猫</h3><em>关注 1 年</em></div>
+        </div>
+        <p>拍摄教程那几期真的有用，尤其是收音清单，我直接打印贴在器材箱上。比很多讲概念的课程实在。</p>
+        <div class="b900-review-stars">★★★★★</div>
+      </div>
+      <div class="b900-review">
+        <div class="b900-review-top">
+          <span class="b900-avatar" style="background:#3f6b52">南</span>
+          <div><h3>南方有雨</h3><em>关注 3 年</em></div>
+        </div>
+        <p>有时候只是想听点人声，随手打开一个专题就能看进去半小时。它像一个不太吵的朋友，一直在那儿。</p>
+        <div class="b900-review-stars">★★★★★</div>
+      </div>
+      <div class="b900-review">
+        <div class="b900-review-top">
+          <span class="b900-avatar" style="background:#b8623c">柒</span>
+          <div><h3>柒号观察</h3><em>媒体从业者</em></div>
+        </div>
+        <p>更正说明放在显眼位置这一点，值得很多平台学习。做内容不可能不出错，关键是出错之后怎么做。</p>
+        <div class="b900-review-stars">★★★★☆</div>
+      </div>
+    </div>
+
+    <div style="margin-top:52px" class="b900-rank">
+      <div class="b900-rank-card">
+        <h3><i></i>本周热度榜</h3>
+        <ul>
+          <li><span class="b900-rank-no">1</span>雨夜街口的三小时<span>12.6万</span></li>
+          <li><span class="b900-rank-no">2</span>看到一段视频先别转<span>3.4万</span></li>
+          <li><span class="b900-rank-no">3</span>老楼里的晾衣绳<span>2.9万</span></li>
+          <li><span class="b900-rank-no">4</span>清晨五点半的菜市场<span>2.1万</span></li>
+          <li><span class="b900-rank-no">5</span>一只手、一盏灯<span>2.6万</span></li>
+        </ul>
+      </div>
+      <div class="b900-rank-card">
+        <h3><i></i>新人创作者榜</h3>
+        <ul>
+          <li><span class="b900-rank-no">1</span>冯声场<span>+1,240</span></li>
+          <li><span class="b900-rank-no">2</span>唐未寄<span>+980</span></li>
+          <li><span class="b900-rank-no">3</span>何校核<span>+860</span></li>
+          <li><span class="b900-rank-no">4</span>吴巷子<span>+640</span></li>
+          <li><span class="b900-rank-no">5</span>郑一帧<span>+520</span></li>
+        </ul>
+      </div>
+      <div class="b900-rank-card">
+        <h3><i></i>口碑内容榜</h3>
+        <ul>
+          <li><span class="b900-rank-no">1</span>和一位跟拍者聊了四小时<span>9.6</span></li>
+          <li><span class="b900-rank-no">2</span>他带着一封没寄出的信<span>9.4</span></li>
+          <li><span class="b900-rank-no">3</span>四十二分钟正片是怎么来的<span>9.2</span></li>
+          <li><span class="b900-rank-no">4</span>凌晨两点的收银台<span>9.1</span></li>
+          <li><span class="b900-rank-no">5</span>收音比画面更重要<span>8.9</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 企业动态 -->
+<section class="b900-sec b900-sec-alt" id="b900News">
+  <div class="b900-shell">
+    <div class="b900-sec-head">
+      <h2><small>NEWSROOM</small>企业动态</h2>
+      <p>官方发布的产品更新、企划进度与平台公告，按时间倒序排列。</p>
+    </div>
+    <div class="b900-news">
+      <article class="b900-news-item">
+        <time datetime="2026-11-18">2026.11.18</time>
+        <div>
+          <h3>《城市线索档案》第七期正式上线</h3>
+          <p>本期聚焦老城区更新过程中的日常影像，收录 26 条可溯源素材，同步开放引用索引。</p>
+        </div>
+        <span class="b900-news-type">专题上线</span>
+      </article>
+      <article class="b900-news-item">
+        <time datetime="2026-11-17">2026.11.17</time>
+        <div>
+          <h3>「真实影像创作挑战」报名通道开启</h3>
+          <p>面向所有注册创作者开放，投稿截止 12 月 20 日，入围作品将在首页焦点区展映。</p>
+        </div>
+        <span class="b900-news-type">活动报名</span>
+      </article>
+      <article class="b900-news-item">
+        <time datetime="2026-11-15">2026.11.15</time>
+        <div>
+          <h3>创作者认证体系升级，新增线索溯源标签</h3>
+          <p>认证创作者可在上传时标注素材来源与拍摄时间，观众可在播放页查看完整溯源信息。</p>
+        </div>
+        <span class="b900-news-type">产品更新</span>
+      </article>
+      <article class="b900-news-item">
+        <time datetime="2026-11-12">2026.11.12</time>
+        <div>
+          <h3>客户端支持高清下载与离线整理</h3>
+          <p>已收藏内容可按专题、时间、创作者三个维度整理成册，支持导出为本地索引文件。</p>
+        </div>
+        <span class="b900-news-type">下载功能</span>
+      </article>
+      <article class="b900-news-item">
+        <time datetime="2026-11-08">2026.11.08</time>
+        <div>
+          <h3>社区公约 2.0 发布，明确当事人隐私保护条款</h3>
+          <p>新版公约细化了未成年人、突发状况当事人与弱势群体的影像处理规范，即日起生效。</p>
+        </div>
+        <span class="b900-news-type">官方发布</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ + CTA -->
+<section class="b900-sec" id="b900Faq">
+  <div class="b900-shell">
+    <div class="b900-sec-head">
+      <h2><small>SUPPORT</small>帮助与常见问题</h2>
+      <p>关于内容审核、投稿流程、版权与合作的说明，若仍有疑问可通过页面下方入口联系。</p>
+    </div>
+    <div class="b900-faq">
+      <details open>
+        <summary>平台的内容审核流程是怎样的？</summary>
+        <p>每条内容在发布前会经过三重复核：素材来源核验、当事人同意确认、表述准确性校对。通过后进入发布队列，发布后仍会持续接收用户反馈。若发现事实性错误，我们会在播放页显著位置发布更正说明，并记录在企业动态中，确保信息可追溯。</p>
+      </details>
+      <details>
+        <summary>如何成为认证创作者？</summary>
+        <p>注册满三个月、累计发布不少于五条原创内容、且无违规记录的创作者可提交认证申请。审核重点包括素材自主拍摄比例、信息标注完整度与社区互动质量。通过认证后可使用线索溯源标签、专题联合策划与影像档案库引用等能力。</p>
+      </details>
+      <details>
+        <summary>投稿需要提供哪些材料？</summary>
+        <p>建议提供成片或粗剪文件、拍摄说明（时间、地点、拍摄对象）、素材来源清单，以及涉及当事人时的授权说明。若为突发题材，请优先确保自身与他人的安全，并避免在未获授权的情况下公开可识别身份的影像。</p>
+      </details>
+      <details>
+        <summary>内容版权归谁所有？</summary>
+        <p>原创内容的著作权归创作者所有，平台仅在授权范围内进行展示、索引与专题推荐。未经创作者书面同意，平台不会将内容用于商业广告。合作与授权事宜可通过版权合作渠道单独沟通，我们会提供完整的授权文本。</p>
+      </details>
+      <details>
+        <summary>为什么有些影像只有短片段？</summary>
+        <p>部分题材出于隐私保护或调查需要，会以片段形式呈现，并附上拍摄说明与后续跟进状态。我们更倾向于在完整叙事准备好之后再发布长片，而不是用不完整的信息抢占讨论。</p>
+      </details>
+      <details>
+        <summary>如何反馈错误或举报不当内容？</summary>
+        <p>每个播放页右下角设有反馈入口，可选择事实错误、隐私问题、版权争议或社区违规四类。我们承诺在三个工作日内给出初步回复，处理结果会同步通知反馈人。</p>
+      </details>
+      <details>
+        <summary>有商务合作或品牌联名需求怎么联系？</summary>
+        <p>请通过页面底部邮箱发送合作意向，注明品牌、合作形式与时间预期。我们只接受与平台内容调性相符的合作，所有商业内容均会明确标注，不参与任何形式的数据造假。</p>
+      </details>
+    </div>
+
+    <div class="b900-cta" style="margin-top:56px" id="b900Contact">
+      <div class="b900-cta-grid">
+        <div>
+          <h2>把你看⻅的，交给更多人看见</h2>
+          <p>911爆料官方网站持续开放投稿与共创通道。无论你手里是一段街景、一次访谈，还是一条尚未被讲清楚的故事，我们都愿意认真看完。</p>
+          <div class="b900-cta-actions">
+            <button class="b900-btn-primary" type="button" id="b900SubmitOpen2">提交投稿意向</button>
+            <button class="b900-btn-outline" type="button" id="b900CopyLink">复制本页链接</button>
+          </div>
+        </div>
+        <div class="b900-cta-panel">
+          <h3>合作与联系</h3>
+          <ul>
+            <li><span>投稿邮箱</span><b>submit@911baoliao.example</b></li>
+            <li><span>商务合作</span><b>partner@911baoliao.example</b></li>
+            <li><span>版权与授权</span><b>rights@911baoliao.example</b></li>
+            <li><span>反馈处理</span><b>三个工作日内回复</b></li>
+            <li><span>运营状态</span><b>持续运营中 · 每周五更新</b></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="b900-footer">
+  <div class="b900-shell">
+    <div class="b900-footer-grid">
+      <div class="b900-footer-brand">
+        <a class="b900-logo" href="#b900Home">
+          <span class="b900-logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="#fff"><path d="M9 6l10 6-10 6z"/></svg>
+          </span>
+          <span class="b900-logo-text"><strong>911爆料</strong><em>OFFICIAL</em></span>
+        </a>
+        <p>911爆料官方网站，专注真实影像与线索内容的视频品牌。我们以品质、口碑与持续运营为基石，深耕垂直领域，为创作者与企业构建值得信赖的内容生态。</p>
+      </div>
+      <div>
+        <h3>站内导航</h3>
+        <ul>
+          <li><a href="#b900Insight">品牌解析</a></li>
+          <li><a href="#b900Focus">焦点内容</a></li>
+          <li><a href="#b900Hot">热门影像</a></li>
+          <li><a href="#b900Topics">专题企划</a></li>
+          <li><a href="#b900Creators">创作者矩阵</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>内容与社区</h3>
+        <ul>
+          <li><a href="#b900Wall">影像墙</a></li>
+          <li><a href="#b900Reviews">社区评价</a></li>
+          <li><a href="#b900News">企业动态</a></li>
+          <li><a href="#b900Faq">帮助中心</a></li>
+          <li><a href="#b900Contact">投稿与合作</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>关于我们</h3>
+        <ul>
+          <li>品牌故事</li>
+          <li>内容标准</li>
+          <li>社区公约</li>
+          <li>版权说明</li>
+          <li>社会责任</li>
+        </ul>
+      </div>
+    </div>
+    <div class="b900-footer-bottom">
+      <span>© 2026 911爆料 官方网站 · 版权所有 · 持续运营中</span>
+      <span>内容备案编号：影像字第 2019-0911 号　经营许可：内容服务 2026-B-0911</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 投稿弹窗 -->
+<div class="b900-modal" id="b900SubmitModal" role="dialog" aria-modal="true" aria-labelledby="b900ModalTitle">
+  <div class="b900-modal-wrap">
+    <div class="b900-modal-box">
+      <button class="b900-modal-close" type="button" aria-label="关闭" data-b900-close>×</button>
+      <h3 id="b900ModalTitle">提交投稿意向</h3>
+      <p class="b900-modal-sub">填写基本信息，编辑部会在三个工作日内与你联系。</p>
+      <form id="b900SubmitForm">
+        <label for="b900Name">你的称呼</label>
+        <input id="b900Name" type="text" name="name" placeholder="例如：林舟" required>
+        <label for="b900Topic">内容方向</label>
+        <select id="b900Topic" name="topic">
+          <option>城市线索档案</option>
+          <option>镜头背后的人</option>
+          <option>世界观察</option>
+          <option>真实影像创作挑战</option>
+          <option>其他原创题材</option>
+        </select>
+        <label for="b900Desc">内容简介</label>
+        <textarea id="b900Desc" name="desc" placeholder="简单描述影像的主题、拍摄时间与可提供的素材形式"></textarea>
+        <div class="b900-modal-actions">
+          <button class="b900-btn-outline" type="button" data-b900-close>稍后再说</button>
+          <button class="b900-btn-primary" type="submit">提交意向</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- 创作者档案弹窗 -->
+<div class="b900-modal" id="b900CreatorModal" role="dialog" aria-modal="true" aria-labelledby="b900CreatorTitle">
+  <div class="b900-modal-wrap">
+    <div class="b900-modal-box">
+      <button class="b900-modal-close" type="button" aria-label="关闭" data-b900-close>×</button>
+      <h3 id="b900CreatorTitle">创作者档案</h3>
+      <p class="b900-modal-sub" id="b900CreatorSub">—</p>
+      <div id="b900CreatorInfo" style="font-size:13.6px;color:#4a5563;line-height:1.8"></div>
+      <div class="b900-modal-actions">
+        <button class="b900-btn-outline" type="button" data-b900-close>关闭</button>
+        <button class="b900-btn-primary" type="button" id="b900FollowBtn">关注该创作者</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button class="b900-top" id="b900Top" type="button" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 20V6M5 13l7-7 7 7"/></svg>
+</button>
+<div class="b900-toast" id="b900Toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* -------- Toast -------- */
+  var toastEl = document.getElementById('b900Toast');
+  var toastTimer = null;
+  function showToast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add('b900-show');
+    if(toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('b900-show'); }, 2200);
+  }
+
+  /* -------- 移动端导航折叠 -------- */
+  var burger = document.getElementById('b900Burger');
+  var nav = document.getElementById('b900Nav');
+  if(burger && nav){
+    burger.addEventListener('click', function(){
+      var open = nav.classList.toggle('b900-nav-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        nav.classList.remove('b900-nav-open');
+        burger.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* -------- 搜索反馈 -------- */
+  var searchInput = document.getElementById('b900SearchInput');
+  var searchBtn = document.getElementById('b900SearchBtn');
+  var searchFb = document.getElementById('b900SearchFeedback');
+  var searchIndex = [
+    '城市线索档案','镜头背后的人','真实影像创作挑战','雨夜街口的三小时','夜晚的收银台',
+    '拍摄教程','收音技巧','林舟纪实','苏晚观察','陈拾光','周野访谈','影像墙','企业动态'
+  ];
+  function runSearch(){
+    if(!searchInput || !searchFb) return;
+    var q = searchInput.value.trim();
+    if(!q){
+      searchFb.textContent = '输入关键词可快速定位专题、创作者或影像条目。';
+      searchFb.classList.add('b900-show');
+      return;
+    }
+    var hits = searchIndex.filter(function(k){ return k.indexOf(q) !== -1; });
+    if(hits.length){
+      searchFb.textContent = '找到 ' + hits.length + ' 条相关内容：' + hits.slice(0,3).join('、') + (hits.length>3 ? ' 等' : '');
+    }else{
+      searchFb.textContent = '暂未找到「' + q + '」相关内容，可尝试城市、幕后、核验等关键词。';
+    }
+    searchFb.classList.add('b900-show');
+  }
+  if(searchBtn) searchBtn.addEventListener('click', runSearch);
+  if(searchInput){
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); runSearch(); }
+    });
+    searchInput.addEventListener('input', function(){
+      if(searchFb && searchFb.classList.contains('b900-show')) runSearch();
+    });
+  }
+
+  /* -------- 点赞 / 收藏 -------- */
+  document.querySelectorAll('.b900-like').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var numEl = btn.querySelector('.b900-like-num');
+      var base = parseInt(btn.getAttribute('data-count') || '0', 10);
+      var on = btn.classList.toggle('b900-liked');
+      var val = on ? base + 1 : base;
+      if(numEl) numEl.textContent = val.toLocaleString('en-US');
+      showToast(on ? '已标记为有帮助' : '已取消标记');
+    });
+  });
+  document.querySelectorAll('.b900-save').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('b900-saved');
+      var txt = btn.querySelector('.b900-save-txt');
+      if(txt) txt.textContent = on ? '已收藏' : '收藏';
+      showToast(on ? '已加入收藏夹' : '已移出收藏夹');
+    });
+  });
+
+  /* -------- 分享 / 复制链接 -------- */
+  document.querySelectorAll('.b900-share').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var title = btn.getAttribute('data-title') || document.title;
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(title + ' — ' + document.title).then(function(){
+          showToast('链接与标题已复制，可粘贴分享');
+        }).catch(function(){
+          showToast('分享提示：' + title);
+        });
+      }else{
+        showToast('分享提示：' + title);
+      }
+    });
+  });
+  var copyBtn = document.getElementById('b900CopyLink');
+  if(copyBtn){
+    copyBtn.addEventListener('click', function(){
+      var url = location.href;
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(url).then(function(){
+          showToast('本页链接已复制');
+        }).catch(function(){ showToast('复制失败，请手动选择地址栏'); });
+      }else{
+        showToast('复制失败，请手动选择地址栏');
+      }
+    });
+  }
+
+  /* -------- 弹窗通用 -------- */
+  var submitModal = document.getElementById('b900SubmitModal');
+  var creatorModal = document.getElementById('b900CreatorModal');
+  function openModal(m){
+    if(!m) return;
+    m.classList.add('b900-open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(m){
+    if(!m) return;
+    m.classList.remove('b900-open');
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('.b900-modal').forEach(function(m){
+    m.addEventListener('click', function(e){
+      if(e.target === m) closeModal(m);
+    });
+  });
+  document.querySelectorAll('[data-b900-close]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var m = b.closest('.b900-modal');
+      closeModal(m);
+    });
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      document.querySelectorAll('.b900-modal.b900-open').forEach(closeModal);
+    }
+  });
+
+  var submitOpen = document.getElementById('b900SubmitOpen');
+  var submitOpen2 = document.getElementById('b900SubmitOpen2');
+  [submitOpen, submitOpen2].forEach(function(b){
+    if(b) b.addEventListener('click', function(){ openModal(submitModal); });
+  });
+
+  var submitForm = document.getElementById('b900SubmitForm');
+  if(submitForm){
+    submitForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      var name = document.getElementById('b900Name');
+      var desc = document.getElementById('b900Desc');
+      if(name && !name.value.trim()){
+        showToast('请填写你的称呼');
+        name.focus();
+        return;
+      }
+      if(desc && desc.value.trim().length > 0 && desc.value.trim().length < 8){
+        showToast('内容简介稍短，建议再多写一点');
+        desc.focus();
+        return;
+      }
+      closeModal(submitModal);
+      submitForm.reset();
+      showToast('投稿意向已提交，编辑部将尽快联系你');
+    });
+  }
+
+  /* -------- 创作者档案 -------- */
+  var creatorData = {
+    '林舟纪实': { sub:'纪实长片 · 城市线索 · 认证创作者', info:'十年跟拍经验，长期驻守同一机位观察城市夜间的运行节奏。累计发布 86 条原创内容，代表作《雨夜街口的三小时》。主张不摆拍、不预设结论，让素材自己说话。' },
+    '苏晚观察': { sub:'行业观察 · 夜间经济 · 认证创作者', info:'关注被时间切分的人群，作品多聚焦夜班、早班与交接班。累计发布 54 条内容，擅长在有限空间里捕捉真实的疲惫与松弛。' },
+    '陈拾光': { sub:'拍摄教学 · 移动端影像 · 认证创作者', info:'主张设备不是门槛，持续输出可立刻上手的现场拍摄方法。累计发布 127 条教程，覆盖稳定、收音、信息标注与剪辑节奏。' },
+    '周野访谈': { sub:'人物访谈 · 职业伦理 · 认证创作者', info:'做慢节奏长访谈，关心创作者在关键时刻如何做选择。累计发布 41 条内容，访谈平均时长超过三十分钟，保留大量未剪辑对话。' }
+  };
+  var creatorTitle = document.getElementById('b900CreatorTitle');
+  var creatorSub = document.getElementById('b900CreatorSub');
+  var creatorInfo = document.getElementById('b900CreatorInfo');
+  document.querySelectorAll('.b900-creator-more').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var name = btn.getAttribute('data-creator');
+      var d = creatorData[name];
+      if(!d) return;
+      if(creatorTitle) creatorTitle.textContent = name;
+      if(creatorSub) creatorSub.textContent = d.sub;
+      if(creatorInfo) creatorInfo.textContent = d.info;
+      openModal(creatorModal);
+    });
+  });
+  var followBtn = document.getElementById('b900FollowBtn');
+  if(followBtn){
+    followBtn.addEventListener('click', function(){
+      var followed = followBtn.getAttribute('data-followed') === '1';
+      if(followed){
+        followBtn.setAttribute('data-followed','0');
+        followBtn.textContent = '关注该创作者';
+        showToast('已取消关注');
+      }else{
+        followBtn.setAttribute('data-followed','1');
+        followBtn.textContent = '已关注';
+        showToast('已关注，后续更新将优先推送');
+      }
+    });
+  }
+
+  /* -------- 回到顶部 -------- */
+  var topBtn = document.getElementById('b900Top');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 560){ topBtn.classList.add('b900-show'); }
+    else{ topBtn.classList.remove('b900-show'); }
+  }, { passive:true });
+  if(topBtn){
+    topBtn.addEventListener('click', function(){
+      window.scrollTo({ top:0, behavior:'smooth' });
+    });
+  }
+
+  /* -------- 导航高亮 -------- */
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.b900-nav a'));
+  var sections = navLinks.map(function(a){
+    var id = a.getAttribute('href');
+    return id && id.length > 1 ? document.querySelector(id) : null;
+  });
+  window.addEventListener('scroll', function(){
+    var pos = window.scrollY + 180;
+    var idx = -1;
+    sections.forEach(function(sec, i){
+      if(sec && sec.offsetTop <= pos) idx = i;
+    });
+    navLinks.forEach(function(a, i){
+      a.classList.toggle('b900-nav-on', i === idx);
+    });
+  }, { passive:true });
+
+})();
+</script>
+</body>
+  </html>
